@@ -1,10 +1,21 @@
 <template>
   <div>
+    <a href="https://euyo.me/speakniceidiomas/608462842dd4910e7277457a" target="_blank">
+      <div class="info-action">
+        Faça parte do nosso grupo de espanhol no telegram
+      </div>
+    </a>
+
     <Nuxt />
+    <footer>
+      Copyright Basilia Santiago <br>
+      2021
+    </footer>
+
   </div>
 </template>
 
-<style>
+<style lang="postcss">
 html {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, 'Helvetica Neue', Arial, sans-serif;
@@ -24,32 +35,17 @@ html {
   margin: 0;
 }
 
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
+.info-action {
+  @apply font-antonio font-medium tracking-wider bg-secondary;
+  height: 50px;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  text-transform: uppercase;
+  font-size: 0.9rem;
 }
 
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
-}
-
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
-}
-
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
+footer {
+  @apply bg-secondary text-white font-antonio text-sm py-2 text-center tracking-wide;
 }
 </style>
