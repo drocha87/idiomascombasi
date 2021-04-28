@@ -12,7 +12,7 @@
     <div class="flex justify-center">
       <div class="description">
         <p class="pr-4 max-w-1/2">
-        <Highlight>Especialista</Highlight> no ensino de línguas estrangeiras
+        <Highlight>Especialista</Highlight> no ensino de INGLÊS e ESPANHOL
         </p>
       </div>
     </div>
@@ -26,7 +26,6 @@ import Vue from 'vue'
 export default Vue.extend({
   methods: {
     gotoEuyome() {
-      console.log('test');
       window.open('https://euyo.me/speakniceidiomas', '_blank');
     }
   }
@@ -41,7 +40,8 @@ export default Vue.extend({
 
 .description {
   position: relative;
-  @apply text-right font-antonio font-medium text-3xl mt-4 mr-4 ml-4 md:ml-auto mx-auto;
+  @apply text-right font-antonio font-medium text-3xl
+  mt-4 mr-4 ml-4 md:ml-auto mx-auto leading-relaxed tracking-wide;
   padding: 30px 0;
 }
 

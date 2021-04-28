@@ -5,6 +5,7 @@
 </template>
 
 <style lang="postcss" scoped>
+/* TODO: line break inside the element, invalidate the psedou class ::after */
 .highlight {
   position: relative;
 }
@@ -20,7 +21,4 @@
   top: 15%;
   z-index: -1;
 }
-
-
-
 </style>
