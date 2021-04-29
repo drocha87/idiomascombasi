@@ -9,7 +9,7 @@ export const theme = {
       'redhat': ['Red Hat Display', 'sans-serif'],
     },
     colors: {
-      primary: '#6fd6ff',
+      primary: '#A7DADC',
       secondary: '#120e41',
     },
   },

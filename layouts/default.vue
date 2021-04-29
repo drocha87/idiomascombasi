@@ -39,16 +39,13 @@ html {
 }
 
 .info-action {
-  @apply font-antonio font-medium tracking-wider bg-secondary;
+  @apply font-antonio font-medium tracking-wider bg-white text-black text-center uppercase;
   height: 50px;
-  color: white;
-  text-align: center;
   line-height: 50px;
-  text-transform: uppercase;
   font-size: 0.9rem;
 }
 
 footer {
-  @apply bg-secondary text-white font-antonio text-sm py-2 text-center tracking-wider;
+  @apply bg-black text-white font-antonio text-sm py-2 text-center tracking-wider;
 }
 </style>

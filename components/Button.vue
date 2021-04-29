@@ -1,7 +1,7 @@
 <template>
   <div>
     <button @click="$emit('click')">
-      <div class="content" >
+      <div :class="{'content': true, 'small': small}" >
         <slot></slot>
       </div>
     </button>
@@ -12,7 +12,7 @@
 import Vue from 'vue'
 export default Vue.extend({
   props: {
-    // label: { type: String, required: true },
+    small: { type: Boolean, default: false },
   }
 })
 </script>
@@ -20,7 +20,7 @@ export default Vue.extend({
 <style lang="postcss" scoped>
 .content {
   position: relative;
-  @apply border-b-2 border-primary hover:border-secondary leading-8 text-xl mr-2 font-antonio tracking-widest;
+  @apply border-b-2 border-white hover:border-secondary leading-8 text-xl mr-2 font-antonio tracking-widest;
 }
 
 .content::before {
@@ -34,8 +34,12 @@ export default Vue.extend({
   transform: translateY(-50%);
 }
 
+.small {
+  @apply text-base;
+}
+
 button {
-  @apply mx-auto uppercase text-black font-bold py-2 bg-white tracking-wider;
+  @apply mx-auto uppercase text-black font-bold py-2 bg-transparent tracking-wider;
   height: 50px;
 }
 </style>

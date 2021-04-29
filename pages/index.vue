@@ -2,10 +2,23 @@
   <div class="relative">
 
     <section class="main-container">
-      <div class="detail-right"></div>
+      <a href="https://euyo.me/speakniceidiomas" target="_blank">
+        <div class="detail-right">redes sociais</div>
+      </a>
+      <div class="detail-left">
+        basilia santiago ©
+        <div class="w-24 h-1 mr-12 bg-white "></div>
+      </div>
       <MainContainer>
-      <HeroLeftPanel />
-      <HeroRightPanel />
+      <HeroLeftPanel class="hidden md:block"/>
+      <HeroRightPanel class="md:self-center"/>
+      </MainContainer>
+    </section>
+
+    <!-- Promotions -->
+    <section class="mt-12">
+      <MainContainer class="px-8 mx-auto">
+      <PromotionCardSpanishGroup />
       </MainContainer>
     </section>
 
@@ -146,6 +159,7 @@ export default Vue.extend({
 <style lang="postcss">
 .main-container {
   @apply relative flex;
+  background-color: #A7DADC;
 
   margin: 0;
   min-width: 100%;
@@ -157,17 +171,13 @@ export default Vue.extend({
 }
 
 .detail-right{
-  @apply hidden md:block;
+  @apply absolute hidden md:block bg-white px-12 font-antonio tracking-widest
+  leading-10 transform -rotate-90 top-1/2 -right-16;
+}
 
-  position: absolute;
-  background-image: url("assets/images/section-02-about-right-art-image0.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  top: 0;
-  right: 0;
-  width: 162px;
-  height: 196px;
+.detail-left{
+  @apply absolute hidden md:block bg-transparent font-antonio tracking-widest text-xs uppercase
+  leading-10 transform -rotate-90 top-3/4 -left-12;
 }
 
 .detail-middle{

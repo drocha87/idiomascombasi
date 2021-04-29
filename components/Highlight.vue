@@ -1,17 +1,24 @@
 <template>
-  <span class="highlight">
-    <slot />
-  </span>
+  <div class="container inline p-0 m-0">
+    <span class="highlight">
+      <slot />
+    </span>
+  </div>
 </template>
 
 <style lang="postcss" scoped>
+.container {
+  position: relative;
+  z-index: 1;
+}
+
 /* TODO: line break inside the element, invalidate the psedou class ::after */
 .highlight {
   position: relative;
 }
 
-.highlight::after{
-  @apply bg-yellow-400 opacity-50;
+.highlight::before{
+  @apply bg-white opacity-90;
 
   content: "";
   position: absolute;

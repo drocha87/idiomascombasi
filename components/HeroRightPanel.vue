@@ -1,15 +1,19 @@
 <template>
-  <div class="my-12 md:w-1/2 self-center">
+  <div class="mt-12 md:w-1/2">
     <div class="text-center">
       <div class="gretting">
         olá, eu sou a
       </div>
-      <div class="text-center font-dancing text-7xl md:text-8xl ml-12 rotate">
+      <div class="ml-12 text-center font-dancing text-8xl md:text-8xl rotate">
         Basilia!
       </div>
     </div>
 
-    <div class="flex justify-center">
+    <div class="image">
+      <img :src="require('assets/images/Ibasi_black_transparent.png')" alt="Basilia Santiago">
+    </div>
+
+    <div class="flex justify-center md:mt-12">
       <div class="description">
         <p class="pr-4 max-w-1/2">
         <Highlight>Especialista</Highlight> no ensino de INGLÊS e ESPANHOL
@@ -17,7 +21,8 @@
       </div>
     </div>
 
-    <Button class="mt-8" @click="gotoEuyome()">fale comigo</Button>
+
+    <Button class="mt-8 mb-12" @click="gotoEuyome()">fale comigo</Button>
   </div>
 </template>
 
@@ -34,14 +39,14 @@ export default Vue.extend({
 
 <style lang="postcss" scoped>
 .gretting {
-  @apply text-center text-primary text-2xl font-semibold font-antonio mb-4;
+  @apply text-center text-white text-2xl font-semibold font-antonio mb-4;
   transform: translateX(-65px);
 }
 
 .description {
   position: relative;
   @apply text-right font-antonio font-medium text-3xl
-  mt-4 mr-4 ml-4 md:ml-auto mx-auto leading-relaxed tracking-wide;
+  mr-4 ml-4 md:ml-auto mx-auto leading-relaxed tracking-wide;
   padding: 30px 0;
 }
 
@@ -52,10 +57,17 @@ export default Vue.extend({
   width: 6px;
   right: 0;
   top: 0;
-  @apply bg-primary;
+  @apply bg-white;
 }
 
 .rotate {
   margin-top: -20px;
+  transform: rotate(-2.5deg);
 }
+
+.image {
+  @apply mx-auto md:hidden;
+  position: relative;
+}
+
 </style>
