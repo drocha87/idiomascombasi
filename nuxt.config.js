@@ -13,6 +13,56 @@ export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'Idiomas com Basi',
+    meta: [
+      { charset: 'utf-8' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Olá, eu sou a Basilia especialista em Inglês e Espanhol',
+      },
+      {
+        hid: 'og:type',
+        property: 'og:type',
+        content: 'website',
+      },
+      {
+        hid: 'og:url',
+        property: 'og:url',
+        content: 'https://idiomascombasi.com.br',
+      },
+      {
+        hid: 'og:title',
+        property: 'og:title',
+        content: 'Idiomas com Basi',
+      },
+      {
+        hid: 'og:description',
+        property: 'og:description',
+        content: 'Olá, eu sou a Basilia especialista em Inglês e Espanhol',
+      },
+      {
+        hid: 'og:image',
+        property: 'og:image',
+        content:
+        'https://res.cloudinary.com/euyome/image/upload/v1619704120/idiomascombasi/basi_avatar_hfx2df.png',
+      },
+      {
+        hid: 'og:image:alt',
+        property: 'og:image:alt',
+        content: 'Basilia Santiago',
+      },
+      {
+        hid: 'og:image:width',
+        property: 'og:image:width',
+        content: '500',
+      },
+      {
+        hid: 'og:image:height',
+        property: 'og:image:height',
+        content: '500',
+      },
+    ],
     htmlAttrs: {
       lang: 'en',
     },
