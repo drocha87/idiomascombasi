@@ -1,5 +1,6 @@
 <template>
-  <div>
+  <div class="relative">
+
     <section class="main-container">
       <div class="detail-right"></div>
       <MainContainer>
@@ -8,7 +9,8 @@
       </MainContainer>
     </section>
 
-    <section class="flex justify-center mb-12">
+    <section class="relative flex justify-center mb-12">
+      <div class="detail-middle"></div>
       <ContainerRow>
       <Title>
         Quem sou
@@ -105,6 +107,20 @@ export default Vue.extend({
   background-size: cover;
   top: 0;
   right: 0;
+  width: 162px;
+  height: 196px;
+}
+
+.detail-middle{
+  @apply hidden md:block;
+
+  position: absolute;
+  background-image: url("assets/images/blog_section_3_2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 0;
+  left: 0;
   width: 162px;
   height: 196px;
 }

@@ -8,8 +8,11 @@
 
     <Nuxt />
     <footer>
-      Copyright Basilia Santiago <br>
-      2021
+      © 2021 Basilia Santiago. All rights reserved. <br>
+      Site by
+      <a href="https://euyo.me/diego" target="_blank">
+        Diego Rocha.
+      </a>
     </footer>
 
   </div>
@@ -46,6 +49,6 @@ html {
 }
 
 footer {
-  @apply bg-secondary text-white font-antonio text-sm py-2 text-center tracking-wide;
+  @apply bg-secondary text-white font-antonio text-sm py-2 text-center tracking-wider;
 }
 </style>
