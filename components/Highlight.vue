@@ -10,7 +10,7 @@
 import Vue from 'vue'
 export default Vue.extend({
   props: {
-    color: { type: String, default: '#ffd60a' },
+    color: { type: String, default: '#A7DADC' },
   }
 })
 </script>
@@ -24,19 +24,19 @@ export default Vue.extend({
 /* TODO: line break inside the element, invalidate the psedou class ::after */
 .highlight {
   @apply relative;
-  --bgcolor: #ffd60a;
+  --bgcolor: #A7DADC;
 }
 
 .highlight::after{
-  @apply opacity-70;
+  @apply opacity-50;
   background-color: var(--bgcolor);
 
   content: "";
   position: absolute;
-  height: 60%;
+  height: 65%;
   width: 90%;
   left: -2%;
-  top: 15%;
+  top: 12%;
   z-index: -1;
 }
 </style>

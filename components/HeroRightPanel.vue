@@ -24,7 +24,7 @@
     </div>
 
 
-    <Button class="mt-8 mb-12" border-color="border-primary" @click="gotoEuyome()">fale comigo</Button>
+    <Button class="mt-12 mb-12" border-color="border-primary" @click="gotoEuyome()">fale comigo</Button>
   </div>
 </template>
 

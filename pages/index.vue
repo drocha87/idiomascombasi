@@ -17,13 +17,15 @@
 
     <!-- Promotions -->
     <section class="mt-8">
-      <img class="md:hidden" :src="require('assets/images/conversation-group-banner.png')" alt="">
+      <a href="https://euyo.me/speakniceidiomas/608702ff2dd4910e727747bb" target="_blank">
+        <img class="md:hidden" :src="require('assets/images/conversation-group-banner.png')" alt="">
+      </a>
       <!-- <MainContainer class="px-8 mx-auto"> -->
       <!-- <PromotionCardSpanishGroup /> -->
       <!-- </MainContainer> -->
     </section>
 
-    <section class="relative flex justify-center mb-12">
+    <section class="relative flex justify-center mt-8 mb-12">
       <div class="detail-middle"></div>
       <ContainerRow>
       <Title>
