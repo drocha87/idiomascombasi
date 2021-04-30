@@ -16,3 +16,8 @@
   font-family: 'Red Hat Display';
   src: url('../fonts/Red_Hat_Display/RedHatDisplay-Regular.ttf');
 }
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('../fonts/Raleway/Raleway-VariableFont_wght.ttf');
+}

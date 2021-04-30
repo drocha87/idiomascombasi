@@ -1,8 +1,8 @@
 <template>
   <div class="relative self-center md:w-1/2">
-    <div class="image">
-      <img :src="require('assets/images/Ibasi_black_transparent.png')" alt="Basilia Santiago">
-    </div>
+    <!-- <div class="image"> -->
+    <!--   <img :src="require('assets/images/Ibasi_black_transparent.png')" alt="Basilia Santiago"> -->
+    <!-- </div> -->
   </div>
 </template>
 

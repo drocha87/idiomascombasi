@@ -38,8 +38,14 @@ html {
   margin: 0;
 }
 
+*::selection {
+  background: #ffd60a;
+  color: black;
+}
+
+
 .info-action {
-  @apply font-antonio font-medium tracking-wider bg-white text-black text-center uppercase;
+  @apply font-antonio font-medium tracking-wider bg-black md:bg-white md:text-black text-white text-center uppercase md:shadow-md;
   height: 50px;
   line-height: 50px;
   font-size: 0.9rem;

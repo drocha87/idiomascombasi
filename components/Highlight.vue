@@ -1,24 +1,35 @@
 <template>
-  <div class="container inline p-0 m-0">
-    <span class="highlight">
+  <div class="highlight-wrapper">
+    <span class="highlight" :style="{ '--bgcolor': color }">
       <slot />
     </span>
   </div>
 </template>
 
+<script lang="ts">
+import Vue from 'vue'
+export default Vue.extend({
+  props: {
+    color: { type: String, default: '#ffd60a' },
+  }
+})
+</script>
+
 <style lang="postcss" scoped>
-.container {
-  position: relative;
+.highlight-wrapper {
+  @apply inline relative;
   z-index: 1;
 }
 
 /* TODO: line break inside the element, invalidate the psedou class ::after */
 .highlight {
-  position: relative;
+  @apply relative;
+  --bgcolor: #ffd60a;
 }
 
-.highlight::before{
-  @apply bg-white opacity-90;
+.highlight::after{
+  @apply opacity-70;
+  background-color: var(--bgcolor);
 
   content: "";
   position: absolute;

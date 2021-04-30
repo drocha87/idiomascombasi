@@ -16,10 +16,11 @@
     </section>
 
     <!-- Promotions -->
-    <section class="mt-12">
-      <MainContainer class="px-8 mx-auto">
-      <PromotionCardSpanishGroup />
-      </MainContainer>
+    <section class="mt-8">
+      <img class="md:hidden" :src="require('assets/images/conversation-group-banner.png')" alt="">
+      <!-- <MainContainer class="px-8 mx-auto"> -->
+      <!-- <PromotionCardSpanishGroup /> -->
+      <!-- </MainContainer> -->
     </section>
 
     <section class="relative flex justify-center mb-12">
@@ -55,7 +56,7 @@
       <p class="px-8 mt-4 tracking-wide font-redhat">
       Vem comigo na aventura de se <Highlight>comunicar como você quer</Highlight>!
       </p>
-      <Button class="mx-auto mt-8" @click="gotoEuyome()">estude comigo</Button>
+      <Button class="mt-8 justify-self-center" @click="gotoEuyome()">estude comigo</Button>
       </ContainerRow>
     </section>
 
@@ -158,21 +159,19 @@ export default Vue.extend({
 
 <style lang="postcss">
 .main-container {
-  @apply relative flex;
-  background-color: #A7DADC;
+  @apply m-0 relative flex min-w-full justify-center text-center  md:bg-hero-image md:bg-contain md:bg-no-repeat md:bg-left;
+  min-height: 80vh;
 
-  margin: 0;
-  min-width: 100%;
-  min-height: 90vh;
+ /* min-width: 100%;
   justify-content: center;
   align-items: stretch;
   align-content: stretch;
-  text-align: center;
+  text-align: center; */
 }
 
 .detail-right{
-  @apply absolute hidden md:block bg-white px-12 font-antonio tracking-widest
-  leading-10 transform -rotate-90 top-1/2 -right-16;
+  @apply fixed hidden md:block bg-white px-12 font-antonio tracking-widest
+  leading-10 transform -rotate-90 top-1/2 -right-16 border-2 border-primary;
 }
 
 .detail-left{
