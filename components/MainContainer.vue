@@ -1,13 +1,6 @@
 <template>
-  <div class="container">
+  <div class=" flex flex-wrap md:flex-nowrap max-w-screen-lg w-full">
     <slot />
   </div>
 </template>
 
-<style lang="postcss" scoped>
-.container {
-  @apply flex flex-wrap md:flex-nowrap;
-  width: 100%;
-  max-width: 960px;
-}
-</style>

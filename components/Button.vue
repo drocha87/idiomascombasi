@@ -18,7 +18,7 @@ export default Vue.extend({
 
 <style lang="postcss" scoped>
 .content {
-  @apply relative leading-8 text-base font-redhat tracking-widest;
+  @apply relative leading-8 font-antonio tracking-widest;
 }
 
 .content::before {
@@ -38,7 +38,7 @@ export default Vue.extend({
 }
 
 button {
-  @apply mx-auto uppercase border-2 border-primary text-center text-black font-bold py-2 px-12;
+  @apply mx-auto uppercase border-2 border-black text-center text-black py-2 px-12 min-w-full;
   min-height: 2rem;
 }
 </style>

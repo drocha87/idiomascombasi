@@ -15,76 +15,99 @@
       </MainContainer>
     </section>
 
-    <!-- Promotions -->
-    <section class="mt-8">
-      <a href="https://euyo.me/speakniceidiomas/608702ff2dd4910e727747bb" target="_blank">
-        <img class="md:hidden" :src="require('assets/images/conversation-group-banner.png')" alt="">
-      </a>
-      <!-- <MainContainer class="px-8 mx-auto"> -->
-      <!-- <PromotionCardSpanishGroup /> -->
-      <!-- </MainContainer> -->
+    <!-- Testemonials -->
+    <section class="flex justify-center py-8 bg-gray-900 md:py-24">
+      <MainContainer>
+      <Testemonial
+        content="Com as aulas da Basilia eu melhorei meu rendimento no trabalho, conseguindo ler materiais em inglês e efetuar negociações com pessoas que falam o idioma."
+        author="Diego Guimarães"
+        bio="CEO Nines Tecnologia"
+        />
+
+      <Testemonial
+        content="Tenho feito aulas com a Basi e tenho me desenvolvido em um ritmo muito acelerado, a dinâmica dela é sensacional"
+        author="Diego Rocha"
+        bio="Euyo.me Founder"
+        />
+      </MainContainer>
     </section>
 
-    <section class="relative flex justify-center mt-8 mb-12">
-      <div class="detail-middle"></div>
+    <!-- Promotions -->
+    <section>
+      <a class="md:hidden" href="https://euyo.me/speakniceidiomas/608702ff2dd4910e727747bb" target="_blank">
+        <img src="https://res.cloudinary.com/euyome/image/upload/v1619895563/idiomascombasi/conversation-group-banner_ltmnl5.jpg" alt="">
+      </a>
+      <div class="hidden md:block">
+        <SpanishWithBasi />
+      </div>
+    </section>
+
+    <section class="relative flex justify-center mt-8">
       <ContainerRow>
       <Title>
         Quem sou
       </Title>
-      <p class="px-8 tracking-wide font-redhat">
+      <p class="px-8 tracking-wide font-redhat md:p-0">
       Sou <Highlight>especialista</Highlight> no ensino de línguas estrangeiras
       com mais de 10 anos de <Highlight>experiência</Highlight>, pós-graduada
       em inglês e nativa em espanhol.
       </p>
 
-      <p class="px-8 mt-4 tracking-wide font-redhat">
+      <p class="px-8 mt-4 tracking-wide font-redhat md:p-0">
       Ensino <Highlight>espanhol e inglês</Highlight> a pessoas que sabem que
       falar um idioma estrangeiro nos dias de hoje traz muitas vantagens a
       nível pessoal e profissional. Ajudando meus alunos a ganharem
       <Highlight>confiança</Highlight> e a se comunicarem melhor.
       </p>
+      </ContainerRow>
+    </section>
 
-
-      <Title class="mt-12">
+    <section class="relative flex justify-center mt-12">
+      <ContainerRow>
+      <Title>
         Aprenda com Basi
       </Title>
-      <p class="px-8 tracking-wide font-redhat">
+      <p class="px-8 tracking-wide font-redhat md:p-0">
       Atualmente tenho trabalhado com <Highlight>aulas online</Highlight> VIP
       ou em grupo, e tenho certeza que eu tenho as qualidades necessárias para
       te ajudar a dar o <Highlight>próximo</Highlight> <Highlight>passo</Highlight> no desenvolvimento
       e na confiança do seu inglês ou espanhol!!
       </p>
 
-      <p class="px-8 mt-4 tracking-wide font-redhat">
+      <p class="px-8 mt-4 tracking-wide font-redhat md:p-0">
       Vem comigo na aventura de se <Highlight>comunicar como você quer</Highlight>!
       </p>
-      <Button class="mt-8 justify-self-center" @click="gotoEuyome()">estude comigo</Button>
+      <div class="w-64 mx-auto">
+        <Button class="mt-14 justify-self-center" @click="gotoEuyome()">estude comigo</Button>
+      </div>
       </ContainerRow>
     </section>
 
-    <!-- Testemonials -->
-    <section class="flex justify-center mb-24">
-      <MainContainer>
-      <Testemonial
-        content="Com as aulas da Basilia eu melhorei meu rendimento no trabalho, conseguindo ler materiais em inglês e efetuar negociações com pessoas que falam o idioma."
-        author="Diego Guimarães"
-        />
+    <section class="relative flex justify-center mt-12">
+      <ContainerRow>
+      <Title>
+        Grupo Telegram
+      </Title>
+      <p class="px-8 tracking-wide font-redhat md:p-0">
+      Se você quer receber conteúdo gratuito e manter contato ativo com o
+      idioma <Highlight>#INGLÊS</Highlight> ou
+      <Highlight>#ESPANHOL</Highlight>, te faço um convite para participar do
+      meu grupo no Telegram!
 
-      <Testemonial
-        content="Tenho feito aulas com a Basi e tenho me desenvolvido em um ritmo muito acelerado, a dinâmica dela é sensacional"
-        author="Diego Rocha"
-        />
-      </MainContainer>
+      Além de receber dicas e ter contato com a língua você também pode fazer
+      quizzes, escutar a áudios e muito mais!
+      </p>
+      <div class="flex flex-col mx-auto mt-14 md:flex-row md:justify-between max-w-3/4 min-w-3/4 ">
+        <div class="flex-grow">
+          <Button @click="goto('https://euyo.me/speakniceidiomas/608462842dd4910e7277457a')">grupo em espanhol</Button>
+        </div>
+        <div class="hidden w-32 md:block"></div>
+        <div class="flex-grow mt-8 md:mt-0">
+          <Button class="block" @click="goto('https://euyo.me/speakniceidiomas/60005f5857eb320017134754')">grupo em inglês</Button>
+        </div>
+      </div>
+      </ContainerRow>
     </section>
-
-    <!-- Connect with me -->
-    <!-- <section class="flex justify-center mb-24"> -->
-    <!--   <ContainerRow> -->
-    <!--   <Title> -->
-    <!--     Redes sociais -->
-    <!--   </Title> -->
-    <!--   </ContainerRow> -->
-    <!-- </section> -->
   </div>
 </template>
 
@@ -93,6 +116,10 @@ import Vue from 'vue'
 
 export default Vue.extend({
   methods: {
+    goto(url: string) {
+      window.open(url, '_blank');
+    },
+
     gotoEuyome() {
       window.open('https://euyo.me/speakniceidiomas/6089dd252dd4910e72774c63', '_blank');
     }
@@ -173,25 +200,11 @@ export default Vue.extend({
 
 .detail-right{
   @apply fixed hidden md:block bg-white px-12 font-antonio tracking-widest
-  leading-10 transform -rotate-90 top-1/2 -right-16 border-2 border-primary;
+  leading-10 transform -rotate-90 top-1/2 -right-16 border-2 border-black;
 }
 
 .detail-left{
   @apply absolute hidden md:block bg-transparent font-antonio tracking-widest text-xs uppercase
   leading-10 transform -rotate-90 top-3/4 -left-12;
-}
-
-.detail-middle{
-  @apply hidden md:block;
-
-  position: absolute;
-  background-image: url("assets/images/blog_section_3_2.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  top: 0;
-  left: 0;
-  width: 162px;
-  height: 196px;
 }
 </style>
