@@ -77,8 +77,8 @@
       <p class="px-8 mt-4 tracking-wide font-redhat md:p-0">
       Vem comigo na aventura de se <Highlight>comunicar como você quer</Highlight>!
       </p>
-      <div class="w-64 mx-auto">
-        <Button class="mt-14 justify-self-center" @click="gotoEuyome()">estude comigo</Button>
+      <div class="w-64 mx-auto mt-14">
+        <Button href="https://euyo.me/idiomascombasi" target="_blank">estude comigo</Button>
       </div>
       </ContainerRow>
     </section>
@@ -99,11 +99,11 @@
       </p>
       <div class="flex flex-col mx-auto mt-14 md:flex-row md:justify-between max-w-3/4 min-w-3/4 ">
         <div class="flex-grow">
-          <Button @click="goto('https://euyo.me/speakniceidiomas/608462842dd4910e7277457a')">grupo em espanhol</Button>
+          <Button href="https://euyo.me/speakniceidiomas/608462842dd4910e7277457a" target="_blank">grupo em espanhol</Button>
         </div>
         <div class="hidden w-32 md:block"></div>
         <div class="flex-grow mt-8 md:mt-0">
-          <Button class="block" @click="goto('https://euyo.me/speakniceidiomas/60005f5857eb320017134754')">grupo em inglês</Button>
+          <Button href="https://euyo.me/speakniceidiomas/60005f5857eb320017134754" target="_blank">grupo em inglês</Button>
         </div>
       </div>
       </ContainerRow>

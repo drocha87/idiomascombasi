@@ -1,14 +1,18 @@
 <template>
-    <button @click="$emit('click')">
+  <a v-bind="$attrs" @click="$emit('click')">
+    <div class="cursor-pointer min-w-full px-12 py-2 mx-auto text-center text-black uppercase border-2 border-black" style="min-height: 2rem">
       <div :class="[{'content': true, 'small': small}, borderColor]" >
         <slot></slot>
       </div>
-    </button>
+    </div>
+  </a>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
 export default Vue.extend({
+  inheritAttrs: false,
+
   props: {
     small: { type: Boolean, default: false },
     borderColor: { type: String, default: 'border-primary' },
@@ -35,10 +39,5 @@ export default Vue.extend({
 
 .small {
   @apply text-base;
-}
-
-button {
-  @apply mx-auto uppercase border-2 border-black text-center text-black py-2 px-12 min-w-full;
-  min-height: 2rem;
 }
 </style>

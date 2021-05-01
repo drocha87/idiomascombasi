@@ -22,8 +22,8 @@
     </div>
 
 
-    <div class="w-64 mx-auto">
-      <Button class="mt-12 mb-12" border-color="border-primary" @click="gotoEuyome()">fale comigo</Button>
+    <div class="w-64 mx-auto my-12">
+      <Button href="https://euyo.me/idiomascombasi" target="_blank">fale comigo</Button>
     </div>
   </div>
 </template>
@@ -33,7 +33,7 @@ import Vue from 'vue'
 export default Vue.extend({
   methods: {
     gotoEuyome() {
-      window.open('https://euyo.me/speakniceidiomas', '_blank');
+      window.open('', '_blank');
     }
   }
 })
