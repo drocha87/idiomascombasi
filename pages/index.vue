@@ -2,7 +2,7 @@
   <div class="relative">
 
     <section class="main-container">
-      <a href="https://euyo.me/speakniceidiomas" target="_blank">
+      <a href="https://euyo.me/idiomascombasi" target="_blank">
         <div class="detail-right">redes sociais</div>
       </a>
       <div class="detail-left">
@@ -42,48 +42,86 @@
       </div>
     </section>
 
-    <section class="relative flex justify-center mt-8">
+    <section class="relative flex justify-center mt-8 md:mt-24">
       <ContainerRow>
-      <Title>
-        Quem sou
-      </Title>
-      <p class="px-8 tracking-wide font-redhat md:p-0">
-      Sou <Highlight>especialista</Highlight> no ensino de línguas estrangeiras
-      com mais de 10 anos de <Highlight>experiência</Highlight>, pós-graduada
-      em inglês e nativa em espanhol.
-      </p>
+      <div class="md:hidden">
+        <Title>
+          Quem sou
+        </Title>
+      </div>
 
-      <p class="px-8 mt-4 tracking-wide font-redhat md:p-0">
-      Ensino <Highlight>espanhol e inglês</Highlight> a pessoas que sabem que
-      falar um idioma estrangeiro nos dias de hoje traz muitas vantagens a
-      nível pessoal e profissional. Ajudando meus alunos a ganharem
-      <Highlight>confiança</Highlight> e a se comunicarem melhor.
-      </p>
-      </ContainerRow>
-    </section>
+      <div class="flex items-center md:mt-8">
+        <div class="flex flex-col flex-grow hidden min-w-1/2 md:block space-y-12">
+          <div>
+            <p class="text-5xl text-gray-300 font-antonio">Amo o que eu faço!</p>
+            <div class="w-32 h-2 mt-2 bg-gray-200 opacity-40"></div>
+          </div>
 
-    <section class="relative flex justify-center mt-12">
-      <ContainerRow>
-      <Title>
-        Aprenda com Basi
-      </Title>
-      <p class="px-8 tracking-wide font-redhat md:p-0">
-      Atualmente tenho trabalhado com <Highlight>aulas online</Highlight> VIP
-      ou em grupo, e tenho certeza que eu tenho as qualidades necessárias para
-      te ajudar a dar o <Highlight>próximo</Highlight> <Highlight>passo</Highlight> no desenvolvimento
-      e na confiança do seu inglês ou espanhol!!
-      </p>
+          <div class="flex items-center text-5xl font-bold font-antonio">
+            <div>
+              Quem sou
+            </div>
+            <div class="w-16 h-1 ml-8 bg-red-500"></div>
+          </div>
+        </div>
+        <div>
+          <p class="px-8 tracking-wide font-redhat md:p-0">
+          Sou Colombiana, <Highlight>especialista</Highlight> no ensino de línguas estrangeiras,
+          com mais de 10 anos de <Highlight>experiência</Highlight>, pós-graduada
+          em inglês e nativa em espanhol.
+          </p>
 
-      <p class="px-8 mt-4 tracking-wide font-redhat md:p-0">
-      Vem comigo na aventura de se <Highlight>comunicar como você quer</Highlight>!
-      </p>
-      <div class="w-64 mx-auto mt-14">
-        <Button href="https://euyo.me/idiomascombasi" target="_blank">estude comigo</Button>
+
+          <p class="px-8 mt-4 tracking-wide font-redhat md:p-0">
+          Tenho ajudado meus alunos a se desenvolverem com
+          <Highlight>confiança</Highlight>, adquirindo
+          <Highlight>independência</Highlight> ao se expressarem tanto em inglês
+          quanto em espanhol.
+          </p>
+        </div>
       </div>
       </ContainerRow>
     </section>
 
-    <section class="relative flex justify-center mt-12">
+    <section class="relative flex justify-center mt-12 md:mt-24">
+      <ContainerRow>
+      <div class="md:hidden">
+        <Title>
+          Aprenda com Basi
+        </Title>
+      </div>
+
+      <div class="flex items-center md:mt-24">
+        <div class="min-w-1/2">
+          <p class="px-8 tracking-wide font-redhat md:p-0">
+          Atualmente tenho trabalhado com <Highlight>aulas online</Highlight> VIP
+          ou em grupo, e tenho certeza que eu tenho as qualidades necessárias para
+          te ajudar a dar o <Highlight>próximo</Highlight> <Highlight>passo</Highlight> no desenvolvimento
+          e na confiança do seu inglês ou espanhol!!
+          </p>
+          <div class="w-64 mx-auto mt-14">
+            <Button href="https://euyo.me/idiomascombasi" target="_blank">estude comigo</Button>
+          </div>
+        </div>
+
+        <div class="flex flex-col flex-grow hidden min-w-1/2 md:block space-y-12">
+          <div>
+            <p class="text-5xl text-right text-gray-300 font-antonio">Sim, eu posso!</p>
+            <div class="w-32 h-2 mt-2 ml-auto bg-gray-200 opacity-40"></div>
+          </div>
+
+          <div class="flex items-center justify-end text-5xl font-bold font-antonio">
+            <div class="w-16 h-1 mr-8 bg-red-500"></div>
+            <div>
+              Aprenda com Basi
+            </div>
+          </div>
+        </div>
+      </div>
+      </ContainerRow>
+    </section>
+
+    <section class="relative flex justify-center mt-12 md:mt-32">
       <ContainerRow>
       <Title>
         Grupo Telegram

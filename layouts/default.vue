@@ -7,7 +7,7 @@
     </a>
 
     <Nuxt />
-    <footer class="py-4 mt-12 text-sm tracking-wider text-center text-white bg-black font-antonio">
+    <footer class="py-4 mt-24 text-sm tracking-wider text-center text-white bg-black font-antonio">
       © 2021 Basilia Santiago. All rights reserved. <br>
       Site by <a href="https://euyo.me/diego" target="_blank"> Diego Rocha.  </a>
     </footer>

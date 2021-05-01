@@ -45,10 +45,8 @@ export default Vue.extend({
 }
 
 .description {
-  position: relative;
-  @apply text-right font-antonio font-medium text-3xl mt-4
-  mr-4 ml-4 md:ml-auto mx-auto leading-relaxed tracking-wide;
-  padding: 30px 0;
+  @apply relative text-right font-antonio font-medium text-3xl mt-12
+  md:ml-auto leading-relaxed tracking-wide mr-12 md:mr-0;
 }
 
 .description::after {
