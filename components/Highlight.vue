@@ -1,9 +1,7 @@
 <template>
-  <div class="highlight-wrapper">
-    <span class="highlight" :style="{ '--bgcolor': color }">
-      <slot />
-    </span>
-  </div>
+  <span class="text-red-500">
+    <slot />
+  </span>
 </template>
 
 <script lang="ts">
@@ -16,14 +14,14 @@ export default Vue.extend({
 </script>
 
 <style lang="postcss" scoped>
+/*
 .highlight-wrapper {
   @apply inline relative;
   z-index: 1;
 }
 
-/* TODO: line break inside the element, invalidate the psedou class ::after */
 .highlight {
-  @apply relative;
+  @apply relative inline;
   --bgcolor: #A7DADC;
 }
 
@@ -39,4 +37,5 @@ export default Vue.extend({
   top: 12%;
   z-index: -1;
 }
+*/
 </style>

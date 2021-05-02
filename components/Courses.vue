@@ -9,14 +9,11 @@
     <div class="flex items-center">
       <div class="min-w-1/2">
         <p class="px-8 tracking-wide font-redhat md:p-0">
-        Aulas VIP ou em Dupla, em inglês ou espanhol, com duração de uma hora pela plataforma ZOOM.
-        Horários flexivéis e com o material por minha conta, você vai estudar o idioma desejado no
-        seu ritmo e com assuntos atuais, agende sua aula experimental gratuita.
-
-        <!-- Atualmente tenho trabalhado com <Highlight>aulas online</Highlight> VIP -->
-        <!-- ou em grupo, e tenho certeza que eu tenho as qualidades necessárias para -->
-        <!-- te ajudar a dar o <Highlight>próximo</Highlight> <Highlight>passo</Highlight> no desenvolvimento -->
-        <!-- e na confiança do seu inglês ou espanhol!! -->
+        Aulas VIP ou em Dupla, em inglês ou espanhol, com duração de uma hora
+        pela plataforma ZOOM.  <Highlight>Horários flexivéis</Highlight> e com
+        o material por minha conta, você vai estudar o idioma desejado no
+        <Highlight>seu ritmo</Highlight> e com assuntos atuais, agende sua aula
+        <Highlight>experimental gratuita</Highlight>.
         </p>
         <div class="w-64 mx-auto mt-14">
           <Button href="https://euyo.me/idiomascombasi" target="_blank">Agende sua Aula</Button>
@@ -61,10 +58,10 @@
 
         <div class="min-w-1/2">
           <p class="px-8 tracking-wide font-redhat md:p-0">
-          Aulas em inglês ou espanhol, em turmas reduzidas pela plataforma
+          Aulas em inglês ou espanhol, em <Highlight>turmas reduzidas</Highlight> pela plataforma
           ZOOM, compartilhe sua hora de aula com outras pessoas que tem o mesmo
           objetivo que você!!! Verifique os horários de turmas disponíveis e faça sua
-          primeira aula grátis!
+          <Highlight>primeira aula grátis</Highlight>!
           </p>
           <div class="w-64 mx-auto mt-14">
             <Button href="https://euyo.me/idiomascombasi" target="_blank">Agende sua Aula</Button>

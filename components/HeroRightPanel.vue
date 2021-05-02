@@ -2,9 +2,7 @@
   <div class="mt-12 md:w-1/2">
     <div class="text-center">
       <div class="gretting">
-        <Highlight color="#A7DADC">
         Olá, eu sou a
-        </Highlight>
       </div>
       <div class="ml-12 -mt-4 text-center md:mt-0 font-dancing text-8xl md:text-9xl rotate">
         Basi
@@ -17,7 +15,7 @@
 
     <div class="description">
       <p class="ml-auto mr-4 max-w-3/4">
-      Te ajudo a falar <Highlight>INGLÊS</Highlight> e <Highlight>ESPANHOL</Highlight> com confiança
+      Te ajudo a falar INGLÊS e ESPANHOL com confiança
       </p>
     </div>
 
@@ -50,7 +48,7 @@ export default Vue.extend({
 }
 
 .description::after {
-  @apply absolute bg-primary h-full;
+  @apply absolute bg-red-500 h-full;
   content: "";
   width: 6px;
   right: 0;

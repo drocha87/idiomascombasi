@@ -1,10 +1,6 @@
 <template>
   <div class="relative">
-
     <section class="main-container" style="background-color: #fafafa">
-      <!-- <a href="https://euyo.me/idiomascombasi" target="_blank"> -->
-      <!--   <div class="detail-right">redes sociais</div> -->
-      <!-- </a> -->
       <div class="detail-left">
         basilia santiago ©
         <div class="w-24 h-1 mr-12 bg-white "></div>
