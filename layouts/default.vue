@@ -1,13 +1,14 @@
 <template>
   <div>
-    <a href="https://euyo.me/speakniceidiomas/608462842dd4910e7277457a" target="_blank">
-      <div class="info-action">
-        Faça parte do nosso grupo de espanhol no telegram
-      </div>
-    </a>
+    <DesktopNavBar />
+    <!-- <a href="https://euyo.me/speakniceidiomas/608462842dd4910e7277457a" target="_blank"> -->
+    <!--   <div class="info-action"> -->
+    <!--     Faça parte do nosso grupo de espanhol no telegram -->
+    <!--   </div> -->
+    <!-- </a> -->
 
     <Nuxt />
-    <footer class="py-4 mt-24 text-sm tracking-wider text-center text-white bg-black font-antonio">
+    <footer class="py-4 mt-24 text-sm tracking-widest text-center text-white bg-gray-900 font-antonio">
       © 2021 Basilia Santiago. All rights reserved. <br>
       Site by <a href="https://euyo.me/diego" target="_blank"> Diego Rocha.  </a>
     </footer>
@@ -26,6 +27,8 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+  background-color: #fafafa;
+  scroll-behavior: smooth;
 }
 
 *,

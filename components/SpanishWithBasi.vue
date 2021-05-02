@@ -6,7 +6,7 @@
         Grupo de Conversação
         </p>
         <p class="text-base tracking-wider text-gray-900 font-redhat font-regular">
-        Faça parte do meu nove grupo de conversação, Español con
+        Faça parte do meu novo grupo de conversação, Español con
         Basi. São aulas ao vivo, todos os sábados comigo, pela
         plataforma ZOOM. ¡Sí, tú puedes hablar español!
         </p>

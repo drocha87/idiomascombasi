@@ -1,10 +1,10 @@
 <template>
   <div class="relative">
 
-    <section class="main-container">
-      <a href="https://euyo.me/idiomascombasi" target="_blank">
-        <div class="detail-right">redes sociais</div>
-      </a>
+    <section class="main-container" style="background-color: #fafafa">
+      <!-- <a href="https://euyo.me/idiomascombasi" target="_blank"> -->
+      <!--   <div class="detail-right">redes sociais</div> -->
+      <!-- </a> -->
       <div class="detail-left">
         basilia santiago ©
         <div class="w-24 h-1 mr-12 bg-white "></div>
@@ -121,31 +121,42 @@
       </ContainerRow>
     </section>
 
-    <section class="relative flex justify-center mt-12 md:mt-32">
-      <ContainerRow>
-      <Title>
-        Grupo Telegram
-      </Title>
-      <p class="px-8 tracking-wide font-redhat md:p-0">
-      Se você quer receber conteúdo gratuito e manter contato ativo com o
-      idioma <Highlight>#INGLÊS</Highlight> ou
-      <Highlight>#ESPANHOL</Highlight>, te faço um convite para participar do
-      meu grupo no Telegram!
+    <TelegramGroups id="telegram" />
 
-      Além de receber dicas e ter contato com a língua você também pode fazer
-      quizzes, escutar a áudios e muito mais!
-      </p>
-      <div class="flex flex-col mx-auto mt-14 md:flex-row md:justify-between max-w-3/4 min-w-3/4 ">
-        <div class="flex-grow">
-          <Button href="https://euyo.me/speakniceidiomas/608462842dd4910e7277457a" target="_blank">grupo em espanhol</Button>
-        </div>
-        <div class="hidden w-32 md:block"></div>
-        <div class="flex-grow mt-8 md:mt-0">
-          <Button href="https://euyo.me/speakniceidiomas/60005f5857eb320017134754" target="_blank">grupo em inglês</Button>
-        </div>
+    <div class="hidden md:block">
+      <div class="flex items-center mt-24">
+        <div class="ml-12 mr-32 text-lg tracking-widest font-antonio">Estude comigo</div>
+        <div class="flex-grow bg-gray-200" style="height: 1px;"></div>
       </div>
-      </ContainerRow>
-    </section>
+    </div>
+
+    <Courses id="courses" class="mt-12 md:mt-24"/>
+
+    <!-- <section class="relative flex justify-center mt-12 md:mt-32"> -->
+    <!--   <ContainerRow> -->
+    <!--   <Title> -->
+    <!--     Grupo Telegram -->
+    <!--   </Title> -->
+    <!--   <p class="px-8 tracking-wide font-redhat md:p-0"> -->
+    <!--   Se você quer receber conteúdo gratuito e manter contato ativo com o -->
+    <!--   idioma <Highlight>#INGLÊS</Highlight> ou -->
+    <!--   <Highlight>#ESPANHOL</Highlight>, te faço um convite para participar do -->
+    <!--   meu grupo no Telegram! -->
+
+    <!--   Além de receber dicas e ter contato com a língua você também pode fazer -->
+    <!--   quizzes, escutar a áudios e muito mais! -->
+    <!--   </p> -->
+    <!--   <div class="flex flex-col mx-auto mt-14 md:flex-row md:justify-between max-w-3/4 min-w-3/4 "> -->
+    <!--     <div class="flex-grow"> -->
+    <!--       <Button href="https://euyo.me/speakniceidiomas/608462842dd4910e7277457a" target="_blank">grupo em espanhol</Button> -->
+    <!--     </div> -->
+    <!--     <div class="hidden w-32 md:block"></div> -->
+    <!--     <div class="flex-grow mt-8 md:mt-0"> -->
+    <!--       <Button href="https://euyo.me/speakniceidiomas/60005f5857eb320017134754" target="_blank">grupo em inglês</Button> -->
+    <!--     </div> -->
+    <!--   </div> -->
+    <!--   </ContainerRow> -->
+    <!-- </section> -->
   </div>
 </template>
 
@@ -238,7 +249,7 @@ export default Vue.extend({
 
 .detail-right{
   @apply fixed hidden md:block bg-white px-12 font-antonio tracking-widest
-  leading-10 transform -rotate-90 top-1/2 -right-16 border-2 border-black;
+  leading-10 transform -rotate-90 top-1/2 -right-16 border border-black;
 }
 
 .detail-left{

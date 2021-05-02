@@ -73,11 +73,6 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { ref: 'preconnect', href: 'https://fonts.gstatic.com' },
-      { ref: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Antonio:wght@400;600;700&display=swap'},
-      { ref: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&display=swap'},
-      { ref: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap'},
-      // { ref: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Material+Icons'},
     ],
   },
 

@@ -1,7 +1,7 @@
 <template>
-  <a v-bind="$attrs" @click="$emit('click')">
+  <a v-bind="$attrs" v-on="$listeners">
     <div
-      class="min-w-full px-12 py-2 mx-auto text-center text-black uppercase border-2 border-black cursor-pointer hover:border-primary transition duration-700 ease-in-out"
+      class="min-w-full px-12 py-2 mx-auto text-center text-black uppercase border border-black cursor-pointer hover:border-gray-200 transition-all duration-700 ease-in-out"
       style="min-height: 2rem">
       <div :class="[{'content': true, 'small': small}, borderColor]" >
         <slot></slot>
@@ -29,7 +29,7 @@ export default Vue.extend({
 
 
 .content::after {
-  @apply text-xl text-primary absolute;
+  @apply text-xl text-black absolute;
   content: ">";
   height: 2rem;
   right: -20px;
