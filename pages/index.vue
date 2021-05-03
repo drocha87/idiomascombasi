@@ -74,7 +74,7 @@
           </p>
 
 
-          <p class="px-8 mt-4 tracking-wide font-redhat md:p-0 text-gray-600">
+          <p class="px-8 mt-4 tracking-wide text-gray-600 font-redhat md:p-0">
           Tenho ajudado meus alunos a se desenvolverem com
           <Highlight>confiança</Highlight>, adquirindo
           <Highlight>independência</Highlight> ao se expressarem tanto em inglês
@@ -95,7 +95,7 @@
 
       <div class="flex items-center md:mt-24">
         <div class="min-w-1/2">
-          <p class="px-8 tracking-wide font-redhat md:p-0 text-gray-600">
+          <p class="px-8 tracking-wide text-gray-600 font-redhat md:p-0">
           Atualmente tenho trabalhado com <Highlight>aulas online</Highlight> VIP
           ou em grupo, e tenho certeza que eu tenho as qualidades necessárias para
           te ajudar a dar o <Highlight>próximo</Highlight> <Highlight>passo</Highlight> no desenvolvimento
@@ -214,7 +214,7 @@ export default Vue.extend({
           hid: 'og:image',
           property: 'og:image',
           content:
-            'https://res.cloudinary.com/euyome/image/upload/v1619704120/idiomascombasi/basi_avatar_hfx2df.png',
+            'https://res.cloudinary.com/euyome/image/upload/v1619895616/idiomascombasi/basi_hero_mobile_hef21a.jpg',
         },
         {
           hid: 'og:image:alt',
