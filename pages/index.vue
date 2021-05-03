@@ -6,8 +6,7 @@
         <div class="w-24 h-1 mr-12 bg-white "></div>
       </div>
       <MainContainer>
-      <HeroLeftPanel class="hidden md:block"/>
-      <HeroRightPanel class="md:self-center"/>
+      <HeroRightPanel class="md:ml-auto md:self-center"/>
       </MainContainer>
     </section>
 

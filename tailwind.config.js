@@ -12,7 +12,7 @@ export const theme = {
     },
 
     backgroundImage: {
-      'hero-image': "url('assets/images/basi_hero_wider.png')",
+      'hero-image': "url('https://res.cloudinary.com/euyome/image/upload/v1620067471/idiomascombasi/basi_hero_wider_ehkspo.jpg')",
     },
 
     maxWidth: {

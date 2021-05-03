@@ -5,7 +5,7 @@
         <p class="mb-8 text-5xl font-bold font-antonio">
         Grupo de Conversação
         </p>
-        <p class="text-base tracking-wider text-gray-900 font-redhat font-regular">
+        <p class="text-base tracking-wider text-gray-800 font-redhat font-regular">
         Faça parte do meu novo grupo de conversação, Español con
         Basi. São aulas ao vivo, todos os sábados comigo, pela
         plataforma ZOOM. ¡Sí, tú puedes hablar español!
@@ -23,7 +23,7 @@
 <style lang="postcss" scoped>
 .wrapper {
   @apply w-full bg-contain bg-no-repeat bg-right flex;
-  background-image: url("assets/images/spanish_with_basi_banner_big_screen.jpg");
+  background-image: url("https://res.cloudinary.com/euyome/image/upload/v1620066946/idiomascombasi/spanish_with_basi_banner_big_screen_mmqgpg.jpg");
   min-height: 400px;
   max-height: 400px;
 }

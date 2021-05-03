@@ -8,7 +8,7 @@
     <!-- </a> -->
 
     <Nuxt />
-    <footer class="flex flex-col h-24 mt-24 text-sm tracking-widest text-center text-white bg-gray-900 font-antonio">
+    <footer class="flex flex-col h-24 mt-48 text-sm tracking-widest text-center text-white bg-gray-900 font-antonio">
       <div class="my-auto">
         © 2021 Basilia Santiago. All rights reserved. <br>
         Site by <a href="https://euyo.me/diego" target="_blank"> Diego Rocha.  </a>
