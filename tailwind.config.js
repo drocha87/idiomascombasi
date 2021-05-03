@@ -8,6 +8,7 @@ export const theme = {
       'dancing': ['Dancing Script', 'cursive'],
       'redhat': ['Red Hat Display', 'sans-serif'],
       'raleway': ['Raleway', 'sans-serif'],
+      'montserrat': ['Montserrat', 'sans-serif'],
     },
 
     backgroundImage: {
@@ -28,6 +29,10 @@ export const theme = {
     colors: {
       primary: '#A7DADC',
       secondary: '#120e41',
+    },
+
+    transitionProperty: {
+      'max-height': 'max-height',
     },
   },
 };

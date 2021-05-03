@@ -8,7 +8,7 @@
     </div>
     <div class="flex items-center">
       <div class="min-w-1/2">
-        <p class="px-8 tracking-wide font-redhat md:p-0">
+        <p class="px-8 tracking-wide font-redhat md:p-0 text-gray-600">
         Aulas VIP ou em Dupla, em inglês ou espanhol, com duração de uma hora
         pela plataforma ZOOM.  <Highlight>Horários flexivéis</Highlight> e com
         o material por minha conta, você vai estudar o idioma desejado no
@@ -57,7 +57,7 @@
         </div>
 
         <div class="min-w-1/2">
-          <p class="px-8 tracking-wide font-redhat md:p-0">
+          <p class="px-8 tracking-wide font-redhat md:p-0 text-gray-600">
           Aulas em inglês ou espanhol, em <Highlight>turmas reduzidas</Highlight> pela plataforma
           ZOOM, compartilhe sua hora de aula com outras pessoas que tem o mesmo
           objetivo que você!!! Verifique os horários de turmas disponíveis e faça sua

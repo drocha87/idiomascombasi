@@ -4,7 +4,7 @@
     <Title>
       Grupo Telegram
     </Title>
-    <p class="px-8 tracking-wide font-redhat md:p-0">
+    <p class="px-8 tracking-wide font-redhat md:p-0 text-gray-600">
     Se você quer receber conteúdo gratuito e manter contato ativo com o
     idioma <Highlight>#INGLÊS</Highlight> ou
     <Highlight>#ESPANHOL</Highlight>, te faço um convite para participar do

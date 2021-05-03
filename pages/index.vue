@@ -11,22 +11,28 @@
       </MainContainer>
     </section>
 
-    <!-- Testemonials -->
-    <section class="flex justify-center py-8 bg-gray-900 md:py-24">
+    <section class="flex justify-center py-8 mx-auto md:py-24">
       <MainContainer>
-      <Testemonial
-        content="Com as aulas da Basilia eu melhorei meu rendimento no trabalho, conseguindo ler materiais em inglês e efetuar negociações com pessoas que falam o idioma."
-        author="Diego Guimarães"
-        bio="CEO Nines Tecnologia"
-        />
-
-      <Testemonial
-        content="Tenho feito aulas com a Basi e tenho me desenvolvido em um ritmo muito acelerado, a dinâmica dela é sensacional"
-        author="Diego Rocha"
-        bio="Euyo.me Founder"
-        />
+      <Testemonials />
       </MainContainer>
     </section>
+
+    <!-- Testemonials -->
+    <!-- <section class="flex justify-center py-8 bg-gray-900 md:py-24"> -->
+    <!--   <MainContainer> -->
+    <!--   <Testemonial -->
+    <!--     content="" -->
+    <!--     author="Diego Guimarães" -->
+    <!--     bio="CEO Nines Tecnologia" -->
+    <!--     /> -->
+
+    <!--   <Testemonial -->
+    <!--     content="" -->
+    <!--     author="Diego Rocha" -->
+    <!--     bio="Euyo.me Founder" -->
+    <!--     /> -->
+    <!--   </MainContainer> -->
+    <!-- </section> -->
 
     <!-- Promotions -->
     <section>
@@ -61,14 +67,14 @@
           </div>
         </div>
         <div>
-          <p class="px-8 tracking-wide font-redhat md:p-0">
+          <p class="px-8 tracking-wide text-gray-600 font-redhat md:p-0">
           Sou Colombiana, <Highlight>especialista</Highlight> no ensino de línguas estrangeiras,
           com mais de 10 anos de <Highlight>experiência</Highlight>, pós-graduada
           em inglês e nativa em espanhol.
           </p>
 
 
-          <p class="px-8 mt-4 tracking-wide font-redhat md:p-0">
+          <p class="px-8 mt-4 tracking-wide font-redhat md:p-0 text-gray-600">
           Tenho ajudado meus alunos a se desenvolverem com
           <Highlight>confiança</Highlight>, adquirindo
           <Highlight>independência</Highlight> ao se expressarem tanto em inglês
@@ -89,7 +95,7 @@
 
       <div class="flex items-center md:mt-24">
         <div class="min-w-1/2">
-          <p class="px-8 tracking-wide font-redhat md:p-0">
+          <p class="px-8 tracking-wide font-redhat md:p-0 text-gray-600">
           Atualmente tenho trabalhado com <Highlight>aulas online</Highlight> VIP
           ou em grupo, e tenho certeza que eu tenho as qualidades necessárias para
           te ajudar a dar o <Highlight>próximo</Highlight> <Highlight>passo</Highlight> no desenvolvimento
