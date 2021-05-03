@@ -45,7 +45,7 @@ export default {
         hid: 'og:image',
         property: 'og:image',
         content:
-        'https://res.cloudinary.com/euyome/image/upload/v1619895616/idiomascombasi/basi_hero_mobile_hef21a.jpg',
+        'https://res.cloudinary.com/euyome/image/upload/v1620069177/idiomascombasi/og_image_waqy0a.jpg',
       },
       {
         hid: 'og:image:alt',
