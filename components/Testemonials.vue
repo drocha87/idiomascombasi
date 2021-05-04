@@ -1,7 +1,7 @@
 <template>
   <div class="mx-auto md:max-w-3/4">
     <Title>O que falam de mim</Title>
-    <ul ref="accordionContainer" class="px-8 md:p-0 md:mt-12 transition-all duration-700 ease-in-out transform">
+    <ul ref="accordionContainer" class="px-8 overflow-hidden md:p-0 md:mt-12" :style="'max-height: ' + maxHeight + 'px'">
       <li v-for="t in testemonials" :key="t.id" class="my-4">
         <a v-if="!t.visible" class="cursor-pointer focus:outline-none" @click="toggleVisibility(t)">
           <div class="font-medium text-left text-gray-500 font-redhat">
@@ -13,10 +13,10 @@
           <span class="text-black">{{ t.name }}</span> - <span class="font-normal">{{ t.title }}</span>
         </div>
 
-        <div class="flex flex-wrap ml-2 overflow-hidden transition-max-height duration-700 ease-in-out transform md:flex-nowrap"
+        <div class="flex flex-wrap ml-2 overflow-hidden transition-all duration-300 ease-in-out transform md:flex-nowrap"
              :class="{ 'max-h-0': !t.visible, 'my-4': t.visible }"
-             :style="t.visible ? 'max-height: ' + maxHeight + 'px' : ''">
-          <div class="p-4 font-normal tracking-wide text-gray-500 border-l md:pr-24 md:w-3/4 font-redhat" v-html="t.content"> </div>
+             :style="t.visible ? 'max-height: ' + maxHeight + 'px' : 'max-height: 0'">
+          <div class="p-4 font-normal tracking-wide text-gray-500 border-l md:border-b border-gold md:pr-24 md:w-3/4 font-redhat" v-html="t.content"> </div>
           <div class="w-full mt-4 mb-4 text-center max-h-96 md:mt-0 md:max-h-full md:w-1/4 md:mb-0">
             <img  class="object-contain w-full md:object-center md:h-72 md:object-cover"
                   :src="t.image"
@@ -46,7 +46,7 @@ export default Vue.extend({
         {
           id: 2,
           name: 'Diego Guimarães',
-          title: 'CEO Nines Tecnologia',
+          title: 'CEO, Nines Tecnologia',
           content: 'Com as aulas da Basilia eu <spam class="text-black">melhorei meu rendimento no trabalho</spam>, conseguindo ler materiais em inglês e efetuar negociações com pessoas que falam o idioma.',
           image: 'https://res.cloudinary.com/euyome/image/upload/v1620066135/idiomascombasi/diego_guimaraes_zijpqp.jpg',
           visible: false,
@@ -61,6 +61,11 @@ export default Vue.extend({
         },
       ],
     }
+  },
+
+  mounted() {
+    let ul: any = this.$refs.accordionContainer;
+    this.maxHeight = ul ? ul.scrollHeight : 0;
   },
 
   methods: {

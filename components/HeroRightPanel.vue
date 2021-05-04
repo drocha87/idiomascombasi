@@ -48,7 +48,7 @@ export default Vue.extend({
 }
 
 .description::after {
-  @apply absolute bg-red-500 h-full;
+  @apply absolute bg-gold h-full;
   content: "";
   width: 6px;
   right: 0;

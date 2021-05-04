@@ -1,6 +1,6 @@
 <template>
   <div class="relative">
-    <section class="main-container" style="background-color: #fafafa">
+    <section class="main-container">
       <div class="detail-left">
         basilia santiago ©
         <div class="w-24 h-1 mr-12 bg-white "></div>
@@ -16,23 +16,6 @@
       </MainContainer>
     </section>
 
-    <!-- Testemonials -->
-    <!-- <section class="flex justify-center py-8 bg-gray-900 md:py-24"> -->
-    <!--   <MainContainer> -->
-    <!--   <Testemonial -->
-    <!--     content="" -->
-    <!--     author="Diego Guimarães" -->
-    <!--     bio="CEO Nines Tecnologia" -->
-    <!--     /> -->
-
-    <!--   <Testemonial -->
-    <!--     content="" -->
-    <!--     author="Diego Rocha" -->
-    <!--     bio="Euyo.me Founder" -->
-    <!--     /> -->
-    <!--   </MainContainer> -->
-    <!-- </section> -->
-
     <!-- Promotions -->
     <section>
       <a class="md:hidden" href="https://euyo.me/speakniceidiomas/608702ff2dd4910e727747bb" target="_blank">
@@ -43,121 +26,23 @@
       </div>
     </section>
 
-    <section class="relative flex justify-center mt-8 md:mt-24">
-      <ContainerRow>
-      <div class="md:hidden">
-        <Title>
-          Quem sou
-        </Title>
-      </div>
+    <ContentSection title="Quem Sou" subtitle="Amo o que eu faço!">
+    <Paragraph>
+    Sou Colombiana, <Highlight>especialista</Highlight> no ensino de línguas estrangeiras,
+    com mais de 10 anos de <Highlight>experiência</Highlight>, pós-graduada
+    em inglês e nativa em espanhol.
+    </Paragraph>
 
-      <div class="flex items-center md:mt-8">
-        <div class="flex flex-col flex-grow hidden min-w-1/2 md:block space-y-12">
-          <div>
-            <p class="text-5xl text-gray-300 font-antonio">Amo o que eu faço!</p>
-            <div class="w-32 h-2 mt-2 bg-gray-200 opacity-40"></div>
-          </div>
+    <Paragraph>
+    Tenho ajudado meus alunos a se desenvolverem com
+    <Highlight>confiança</Highlight>, adquirindo
+    <Highlight>independência</Highlight> ao se expressarem tanto em inglês
+    quanto em espanhol.
+    </Paragraph>
+    </ContentSection>
 
-          <div class="flex items-center text-5xl font-bold font-antonio">
-            <div>
-              Quem sou
-            </div>
-            <div class="w-16 h-1 ml-8 bg-red-500"></div>
-          </div>
-        </div>
-        <div>
-          <p class="px-8 tracking-wide text-gray-600 font-redhat md:p-0">
-          Sou Colombiana, <Highlight>especialista</Highlight> no ensino de línguas estrangeiras,
-          com mais de 10 anos de <Highlight>experiência</Highlight>, pós-graduada
-          em inglês e nativa em espanhol.
-          </p>
-
-
-          <p class="px-8 mt-4 tracking-wide text-gray-600 font-redhat md:p-0">
-          Tenho ajudado meus alunos a se desenvolverem com
-          <Highlight>confiança</Highlight>, adquirindo
-          <Highlight>independência</Highlight> ao se expressarem tanto em inglês
-          quanto em espanhol.
-          </p>
-        </div>
-      </div>
-      </ContainerRow>
-    </section>
-
-    <section class="relative flex justify-center mt-12 md:mt-24">
-      <ContainerRow>
-      <div class="md:hidden">
-        <Title>
-          Aprenda com Basi
-        </Title>
-      </div>
-
-      <div class="flex items-center md:mt-24">
-        <div class="min-w-1/2">
-          <p class="px-8 tracking-wide text-gray-600 font-redhat md:p-0">
-          Atualmente tenho trabalhado com <Highlight>aulas online</Highlight> VIP
-          ou em grupo, e tenho certeza que eu tenho as qualidades necessárias para
-          te ajudar a dar o <Highlight>próximo</Highlight> <Highlight>passo</Highlight> no desenvolvimento
-          e na confiança do seu inglês ou espanhol!!
-          </p>
-          <div class="w-64 mx-auto mt-14">
-            <Button href="https://euyo.me/idiomascombasi" target="_blank">estude comigo</Button>
-          </div>
-        </div>
-
-        <div class="flex flex-col flex-grow hidden min-w-1/2 md:block space-y-12">
-          <div>
-            <p class="text-5xl text-right text-gray-300 font-antonio">Sim, eu posso!</p>
-            <div class="w-32 h-2 mt-2 ml-auto bg-gray-200 opacity-40"></div>
-          </div>
-
-          <div class="flex items-center justify-end text-5xl font-bold font-antonio">
-            <div class="w-16 h-1 mr-8 bg-red-500"></div>
-            <div>
-              Aprenda com Basi
-            </div>
-          </div>
-        </div>
-      </div>
-      </ContainerRow>
-    </section>
-
+    <Courses id="courses" />
     <TelegramGroups id="telegram" />
-
-    <div class="hidden md:block">
-      <div class="flex items-center mt-24">
-        <div class="ml-12 mr-32 text-lg tracking-widest font-antonio">Estude comigo</div>
-        <div class="flex-grow bg-gray-200" style="height: 1px;"></div>
-      </div>
-    </div>
-
-    <Courses id="courses" class="mt-12 md:mt-24"/>
-
-    <!-- <section class="relative flex justify-center mt-12 md:mt-32"> -->
-    <!--   <ContainerRow> -->
-    <!--   <Title> -->
-    <!--     Grupo Telegram -->
-    <!--   </Title> -->
-    <!--   <p class="px-8 tracking-wide font-redhat md:p-0"> -->
-    <!--   Se você quer receber conteúdo gratuito e manter contato ativo com o -->
-    <!--   idioma <Highlight>#INGLÊS</Highlight> ou -->
-    <!--   <Highlight>#ESPANHOL</Highlight>, te faço um convite para participar do -->
-    <!--   meu grupo no Telegram! -->
-
-    <!--   Além de receber dicas e ter contato com a língua você também pode fazer -->
-    <!--   quizzes, escutar a áudios e muito mais! -->
-    <!--   </p> -->
-    <!--   <div class="flex flex-col mx-auto mt-14 md:flex-row md:justify-between max-w-3/4 min-w-3/4 "> -->
-    <!--     <div class="flex-grow"> -->
-    <!--       <Button href="https://euyo.me/speakniceidiomas/608462842dd4910e7277457a" target="_blank">grupo em espanhol</Button> -->
-    <!--     </div> -->
-    <!--     <div class="hidden w-32 md:block"></div> -->
-    <!--     <div class="flex-grow mt-8 md:mt-0"> -->
-    <!--       <Button href="https://euyo.me/speakniceidiomas/60005f5857eb320017134754" target="_blank">grupo em inglês</Button> -->
-    <!--     </div> -->
-    <!--   </div> -->
-    <!--   </ContainerRow> -->
-    <!-- </section> -->
   </div>
 </template>
 

@@ -1,10 +1,10 @@
 <template>
-  <section class="relative flex justify-center mt-12 md:mt-32">
+  <section class="relative flex justify-center mt-12 md:mt-24">
     <ContainerRow>
     <Title>
       Grupo Telegram
     </Title>
-    <p class="px-8 tracking-wide font-redhat md:p-0 text-gray-600">
+    <p class="px-8 tracking-wide text-gray-600 font-redhat md:p-0">
     Se você quer receber conteúdo gratuito e manter contato ativo com o
     idioma <Highlight>#INGLÊS</Highlight> ou
     <Highlight>#ESPANHOL</Highlight>, te faço um convite para participar do
