@@ -1,23 +1,23 @@
 <template>
   <div class="mx-auto md:max-w-3/4">
     <Title>O que falam de mim</Title>
-    <ul ref="accordionContainer" class="px-8 overflow-hidden md:p-0 md:mt-12" :style="'max-height: ' + maxHeight + 'px'">
+    <ul ref="accordionContainer" class="px-8 md:p-0 md:mt-12">
       <li v-for="t in testemonials" :key="t.id" class="my-4">
         <a v-if="!t.visible" class="cursor-pointer focus:outline-none" @click="toggleVisibility(t)">
           <div class="font-medium text-left text-gray-500 font-redhat">
             <span class="mr-2 text-gray-400 md:hidden">+</span>
-            <span id="author-name">{{ t.name }}</span> - <span class="font-normal">{{ t.title }}</span>
+            <span id="author-name">{{ t.name }}</span> - <span class="text-xs font-normal">{{ t.title }}</span>
           </div>
         </a>
         <div v-else class="font-medium text-left text-gray-500 font-redhat">
-          <span class="text-black">{{ t.name }}</span> - <span class="font-normal">{{ t.title }}</span>
+          <span class="text-black">{{ t.name }}</span> - <span class="text-xs font-normal">{{ t.title }}</span>
         </div>
 
-        <div class="flex flex-wrap ml-2 overflow-hidden transition-all duration-300 ease-in-out transform md:flex-nowrap"
-             :class="{ 'max-h-0': !t.visible, 'my-4': t.visible }"
-             :style="t.visible ? 'max-height: ' + maxHeight + 'px' : 'max-height: 0'">
+        <div :ref="'accordion-item-'+t.id" class="flex flex-wrap ml-2 overflow-hidden md:ml-4 transition-all duration-300 ease-in-out transform md:flex-nowrap"
+                                           :class="{ 'my-4': t.visible }"
+                                           :style="t.visible ? 'height: '+height+'px' : 'height: 0'">
           <div class="p-4 font-normal tracking-wide text-gray-500 border-l md:border-b border-gold md:pr-24 md:w-3/4 font-redhat" v-html="t.content"> </div>
-          <div class="w-full mt-4 mb-4 text-center max-h-96 md:mt-0 md:max-h-full md:w-1/4 md:mb-0">
+          <div class="w-full mt-4 mb-4 text-center md:mt-0 md:max-h-full md:w-1/4 md:mb-0">
             <img  class="object-contain w-full md:object-center md:h-72 md:object-cover"
                   :src="t.image"
                   alt="" >
@@ -33,7 +33,7 @@ import Vue from 'vue'
 export default Vue.extend({
   data() {
     return {
-      maxHeight: 1024,
+      height: 300,
       testemonials: [
         {
           id: 1,
@@ -59,19 +59,22 @@ export default Vue.extend({
           image: 'https://res.cloudinary.com/euyome/image/upload/v1620066135/idiomascombasi/richard_dundovic_lvxoom.jpg',
           visible: false,
         },
+        {
+          id: 4,
+          name: 'Laryssa Batista Cordeiro',
+          title: 'Eng. Química - Cargil',
+          content: 'Com as aulas de inglês rapidamente observei evolução no meu vocabulário, pronuncia e desenvoltura na conversação. A Basi sempre se mostrou atenciosa as minhas necessidades, com aulas interativas e diversificadas. Além do aprendizado durante as aulas, elas se tornam também um momento de descontração!',
+          image: 'https://res.cloudinary.com/euyome/image/upload/v1620139898/idiomascombasi/laryssa_cordeiro_xppwyx.jpg',
+          visible: false,
+        },
       ],
     }
   },
 
-  mounted() {
-    let ul: any = this.$refs.accordionContainer;
-    this.maxHeight = ul ? ul.scrollHeight : 0;
-  },
-
   methods: {
     toggleVisibility(t: any) {
-      let ul: any = this.$refs.accordionContainer;
-      this.maxHeight = ul ? ul.scrollHeight : 0;
+      let item: any = this.$refs[`accordion-item-${t.id}`];
+      this.height = item[0].scrollHeight;
 
       this.testemonials.forEach((item: any) => {
         if (item.id != t.id) {
