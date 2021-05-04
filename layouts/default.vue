@@ -8,11 +8,24 @@
     <!-- </a> -->
 
     <Nuxt />
-    <footer class="flex flex-col h-24 mt-48 text-sm tracking-widest text-center text-white bg-gray-900 font-antonio">
-      <div class="my-auto">
-        © 2021 Basilia Santiago. All rights reserved. <br>
-        Site by <a href="https://euyo.me/diego" target="_blank"> Diego Rocha.  </a>
+    <footer class="px-8 pt-12 pb-32 mt-48 text-sm tracking-wide text-black bg-gray-200 md:px-0 font-redhat">
+      <ContainerRow class="mx-auto">
+      <div>
+        <p class="text-lg" style="color: #C6A869">
+        Deixe-me uma mensagem
+        </p>
+        <p class="mt-4 text-2xl text-gray-900">
+        Ansiosa para saber mais sobre você
+        </p>
+        <p class="mt-2 font-medium text-gray-500">
+        <a href="mailto:basi@idiomascombasi.com.br">basi@idiomascombasi.com.br</a>
+        </p>
       </div>
+      <div class="mt-12 text-gray-500">
+        © 2021 Basilia Santiago. All rights reserved. <br>
+        Site by <a class="underline" href="https://euyo.me/diego" target="_blank"> Diego Rocha.  </a>
+      </div>
+      </ContainerRow>
     </footer>
 
   </div>

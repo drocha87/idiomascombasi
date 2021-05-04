@@ -42,6 +42,8 @@
     </ContentSection>
 
     <Courses id="courses" />
+
+    <SectionDivider class="mt-12" label="Grupos" />
     <TelegramGroups id="telegram" />
   </div>
 </template>

@@ -1,5 +1,5 @@
 <template>
-  <section class="relative flex justify-center mt-12 md:mt-24">
+  <section class="relative flex justify-center mt-12 md:mt-12">
     <ContainerRow>
     <Title>
       Grupo Telegram

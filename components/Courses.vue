@@ -1,11 +1,6 @@
 <template>
   <div>
-    <div class="hidden md:block">
-      <div class="flex items-center">
-        <div class="ml-12 mr-32 text-lg tracking-widest font-antonio">Estude comigo</div>
-        <div class="flex-grow bg-gray-200" style="height: 1px;"></div>
-      </div>
-    </div>
+    <SectionDivider label="Estude comigo" />
 
     <ContentSection title="Aprenda com Basi"
                     subtitle="Sim, eu posso!"
