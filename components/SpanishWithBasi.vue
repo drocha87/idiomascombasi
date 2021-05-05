@@ -11,7 +11,7 @@
         plataforma ZOOM. ¡Sí, tú puedes hablar español!
         </p>
         <div class="w-64 mx-auto">
-          <Button class="block mx-auto mt-12" href="https://euyo.me/speakniceidiomas/608702ff2dd4910e727747bb" target="_blank">
+          <Button class="block mx-auto mt-12" href="https://euyo.me/idiomascombasi/60927b525bb2cb0e4291c6a5" target="_blank">
             Saiba Mais
           </Button>
         </div>
