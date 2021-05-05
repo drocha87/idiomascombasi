@@ -14,7 +14,7 @@
         </div>
 
         <div :ref="'accordion-item-'+t.id" class="flex flex-wrap ml-2 overflow-hidden md:ml-4 transition-all duration-300 ease-in-out transform md:flex-nowrap"
-                                           :class="{ 'my-4': t.visible }"
+                                           :class="{ 'my-4 md:my-2': t.visible }"
                                            :style="t.visible ? heightStyle : 'height: 0'">
           <div class="border-l md:border-b border-gold md:pr-24 md:w-3/4">
             <div class="p-4 font-normal tracking-wide text-gray-500 font-redhat" v-html="t.content"></div>
