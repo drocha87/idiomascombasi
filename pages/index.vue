@@ -47,6 +47,17 @@
 
     <SectionDivider class="mt-12" label="Estude comigo" />
     <Courses id="courses" />
+
+    <SectionDivider label="Traduções profisionais" />
+    <ContentSection title="Traduções" subtitle="Amplie seu público-alvo" button-title="Faça seu Orçamento" url="https://euyo.me/idiomascombasi" >
+    <Paragraph>
+    <Highlight>Traduções profisionais em inglês e espanhol</Highlight>. Faça
+    seu conteúdo chegar a mais pessoas, <Highlight>potencializando os seus
+    resultados!</Highlight> Faça um orçamento sem compromisso entrando em
+    contato comigo pelo botão abaixo!
+    </Paragraph>
+    </ContentSection>
+
     <SectionDivider class="mt-12" label="Grupos" />
     <TelegramGroups id="telegram" />
   </div>

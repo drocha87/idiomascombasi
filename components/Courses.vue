@@ -1,6 +1,5 @@
 <template>
   <div>
-
     <ContentSection title="Aprenda com Basi"
                     subtitle="Sim, eu posso!"
                     button-title="estude comigo" url="https://euyo.me/idiomascombasi"
