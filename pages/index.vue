@@ -10,22 +10,6 @@
       </MainContainer>
     </section>
 
-    <section class="flex justify-center py-8 mx-auto md:py-24">
-      <MainContainer>
-      <Testemonials />
-      </MainContainer>
-    </section>
-
-    <!-- Promotions -->
-    <section>
-      <a class="md:hidden" href="https://euyo.me/speakniceidiomas/608702ff2dd4910e727747bb" target="_blank">
-        <img src="https://res.cloudinary.com/euyome/image/upload/v1619895563/idiomascombasi/conversation-group-banner_ltmnl5.jpg" alt="">
-      </a>
-      <div class="hidden md:block">
-        <SpanishWithBasi />
-      </div>
-    </section>
-
     <ContentSection title="Quem Sou" subtitle="Amo o que eu faço!">
     <Paragraph>
     Sou Colombiana, <Highlight>especialista</Highlight> no ensino de línguas estrangeiras,
@@ -41,8 +25,28 @@
     </Paragraph>
     </ContentSection>
 
-    <Courses id="courses" />
+    <SectionDivider label="Depoimentos" />
+    <section class="flex justify-center py-8 mx-auto md:mb-12">
+      <MainContainer>
+      <Testemonials />
+      </MainContainer>
+    </section>
 
+    <SectionDivider label="Español con Basi" />
+
+    <!-- Promotions -->
+    <section>
+      <a class="md:hidden" href="https://euyo.me/speakniceidiomas/608702ff2dd4910e727747bb" target="_blank">
+        <img src="https://res.cloudinary.com/euyome/image/upload/v1619895563/idiomascombasi/conversation-group-banner_ltmnl5.jpg" alt="">
+      </a>
+      <div class="hidden md:block">
+        <SpanishWithBasi />
+      </div>
+    </section>
+
+
+    <SectionDivider class="mt-12" label="Estude comigo" />
+    <Courses id="courses" />
     <SectionDivider class="mt-12" label="Grupos" />
     <TelegramGroups id="telegram" />
   </div>

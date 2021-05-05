@@ -1,6 +1,5 @@
 <template>
   <div>
-    <SectionDivider label="Estude comigo" />
 
     <ContentSection title="Aprenda com Basi"
                     subtitle="Sim, eu posso!"

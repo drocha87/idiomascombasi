@@ -1,9 +1,11 @@
 <template>
   <a v-bind="$attrs" v-on="$listeners">
     <div
-      class="min-w-full px-12 py-2 mx-auto text-center text-black uppercase border border-black cursor-pointer hover:border-gray-200 transition-all duration-700 ease-in-out"
-      style="min-height: 2rem">
-      <div :class="[{'content': true, 'small': small}, borderColor]" >
+      class="btn-container"
+      style="min-height: 2rem"
+      @mouseover="hover = true"
+      @mouseleave="hover = false">
+      <div class="content borderColor" :class="{'small': small }" >
         <slot></slot>
       </div>
     </div>
@@ -23,8 +25,17 @@ export default Vue.extend({
 </script>
 
 <style lang="postcss" scoped>
+.btn-container {
+  @apply min-w-full px-12 py-2 mx-auto text-center text-black uppercase
+  border border-black cursor-pointer hover:border-gray-200 transition duration-700 ease-in-out;
+}
+
 .content {
-  @apply relative leading-8 font-antonio tracking-widest;
+  @apply relative leading-8 font-antonio tracking-widest transition-all duration-500 ease-in-out;
+}
+
+.btn-container:hover .content {
+  letter-spacing: 0.12rem;
 }
 
 
