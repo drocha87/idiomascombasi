@@ -142,12 +142,6 @@ export default Vue.extend({
 .main-container {
   @apply m-0 relative flex min-w-full justify-center text-center  md:bg-hero-image md:bg-contain md:bg-no-repeat md:bg-left;
   min-height: 80vh;
-
- /* min-width: 100%;
-  justify-content: center;
-  align-items: stretch;
-  align-content: stretch;
-  text-align: center; */
 }
 
 .detail-right{

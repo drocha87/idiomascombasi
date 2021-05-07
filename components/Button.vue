@@ -38,7 +38,6 @@ export default Vue.extend({
   letter-spacing: 0.12rem;
 }
 
-
 .content::after {
   @apply text-xl text-black absolute;
   content: ">";
