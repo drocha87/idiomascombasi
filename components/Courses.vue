@@ -4,10 +4,9 @@ en:
   subtitleOne: Yes, I can
   buttonOne: Study with me
   contentOne: >-
-    Currently, I have worked with online private or group classes and I am
-    confident that I have the right qualities to help you take the next step in
-    developing your English or Spanish confidence.
-
+    Currently, I'm working with online private and group classes and I'm
+    confident that I have the right teaching skills to help you take the next
+    step in developing your English or Spanish confidence.
 
   titleTwo: Private or Pairs classes
   subtitleTwo: You and me
@@ -42,7 +41,7 @@ pt-BR:
   buttonTwo: agende sua aula
   contentTwo: >-
     Aulas VIP ou em Dupla, em inglês ou espanhol, com duração de uma hora pela
-    plataforma ZOOM.  Horários flexivéis e com o material por minha conta, você
+    plataforma ZOOM.  Horários flexíveis e com o material por minha conta, você
     vai estudar o idioma desejado no seu ritmo e com assuntos atuais, agende
     sua aula experimental gratuita.
 
@@ -60,8 +59,8 @@ es:
   subtitleOne: ¡Sí, yo puedo!
   buttonOne: Estudia conmigo
   contentOne: >-
-    Actualmente, he trabajado con clases en línea individuales o en grupos y
-    tengo la certeza que tengo las cualidades necesarias para ayudarte a dar el
+    Actualmente, estoy trabajando con clases en línea individuales o en grupos y
+    tengo la certeza que tengo las habilidades necesarias para ayudarte a dar el
     próximo paso en el desarrollo de la confianza de tu Inglés o Español.
 
   titleTwo: Clases individuales o en parejas
@@ -78,8 +77,8 @@ es:
   buttonThree: Agenda tu clase
   contentThree: >-
     Clases en inglés o en español, en grupos de clases reducidos por la
-    plataforma Zoom, comparta su hora de clase con otras personas que tienen el
-    mismo objetivo que tú. Consulte los horarios disponibles y haga su primera
+    plataforma Zoom, comparte tu hora de clase con otras personas que tienen el
+    mismo objetivo que tú. Consulte los horarios disponibles y haz tu primera
     clase gratis.
 </i18n>
 

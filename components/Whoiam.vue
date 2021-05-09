@@ -9,7 +9,7 @@ en:
 
   pTwo: >-
     I’ve helped my students to build confidence and acquire independence to
-    communicate fluently in English and in Spanish.
+    communicate fluently in English and Spanish.
 
 pt-BR:
   title: Quem sou

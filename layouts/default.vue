@@ -1,3 +1,17 @@
+<i18n lang="yaml">
+en:
+  title: Drop me a line
+  subtitle: Looking forward to hearing from you.
+
+pt-BR:
+  title: Deixe-me uma mensagem
+  subtitle: Ansiosa para saber mais sobre você
+
+es:
+  title: Escríbeme un mensaje
+  subtitle: Estoy ansiosa por saber de ti
+</i18n>
+
 <template>
   <div>
     <DesktopNavBar />
@@ -11,12 +25,9 @@
     <footer class="px-8 pt-12 pb-32 mt-48 text-sm tracking-wide text-black bg-gray-200 md:px-0 font-redhat">
       <ContainerRow class="mx-auto">
       <div>
-        <p class="text-lg" style="color: #C6A869">
-        Deixe-me uma mensagem
-        </p>
-        <p class="mt-4 text-2xl text-gray-900">
-        Ansiosa para saber mais sobre você
-        </p>
+        <p class="text-lg" style="color: #C6A869">{{ $t('title') }}</p>
+        <p class="mt-4 text-2xl text-gray-900">{{ $t('subtitle') }}</p>
+
         <p class="mt-2 font-medium text-gray-500">
         <a href="mailto:basi@idiomascombasi.com.br">basi@idiomascombasi.com.br</a>
         </p>

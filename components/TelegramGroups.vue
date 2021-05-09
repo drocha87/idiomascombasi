@@ -3,7 +3,7 @@ en:
   title: Telegram Group
   content: >-
     If you want to receive content and keep an active contact with the language
-    #ENGLISH or SPANISH, I invite you to participate in my telegram group.  In
+    #ENGLISH or #SPANISH, I invite you to participate in my telegram group.  In
     addition to receiving tips and having contact with the language, you can
     also take quizzes, listen to audios and much more.
 
@@ -16,7 +16,7 @@ pt-BR:
     Se você quer receber conteúdo gratuito e manter contato ativo com o idioma
     #INGLÊS ou #ESPANHOL, te faço um convite para participar do meu grupo no
     Telegram!  Além de receber dicas e ter contato com a língua você também
-    pode fazer quizzes, escutar a áudios e muito mais!
+    pode fazer quizzes, escutar áudios e muito mais!
 
   buttonSpanish: grupo em espanhol
   buttonEnglish: grupo em inglês

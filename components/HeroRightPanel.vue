@@ -1,18 +1,18 @@
 <i18n lang="yaml">
 en:
-  gretting: "Hello, I'm"
-  message: "I help you speaks ENGLISH and SPANISH confidently"
-  button: "Call me"
+  gretting: Hey, I'm
+  message: I help you speak ENGLISH and SPANISH confidently
+  button: Call me
 
 pt-BR:
-  gretting: "Olá, eu sou a"
-  message: "Te ajudo a falar INGLÊS e ESPANHOL com confiança"
-  button: "fale comigo"
+  gretting: Olá, eu sou a
+  message: Te ajudo a falar INGLÊS e ESPANHOL com confiança
+  button: fale comigo
 
 es:
-  gretting: "Hola, yo soy"
-  message: "Te ayudo a hablar INGLÊS y ESPAÑOL con confianza"
-  button: "Llama-me"
+  gretting: Hola, yo soy
+  message: Te ayudo a hablar INGLÉS y ESPAÑOL con confianza
+  button: Contáctame
 </i18n>
 
 <template>

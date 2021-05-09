@@ -22,11 +22,11 @@ es:
   title: Grupo de conversación
 
   content: >-
-    Haga parte de mi nuevo grupo de conversación, Español con Basi. Son clases
+    Haz parte de mi nuevo grupo de conversación, Español con Basi. Son clases
     en vivo, todos los sábados por la plataforma Zoom. ¡Sí, tú puedes hablar
     español!
 
-  button: Sepa Más
+  button: Conoce Más
 </i18n>
 
 

@@ -25,8 +25,8 @@ es:
   button: cotiza aquí
 
   content: >-
-    Traducciones profesionales en Inglés y Español. Haga su contenido llegar a
-    más personas, potencializando sus resultados. ¡Haga una cotización sin
+    Traducciones profesionales en Inglés y Español. Haz que tu contenido llegue a
+    más personas, potencializando tus resultados. ¡Haz una cotización sin
     compromiso, entra en contacto conmigo clicando en el botón de abajo! 
 </i18n>
 
