@@ -5,6 +5,7 @@ en:
   home: Home
   courses: Courses
   groups: Groups
+  close: Close
 
 pt-BR:
   language: Idioma
@@ -12,6 +13,7 @@ pt-BR:
   home: Home
   courses: Cursos
   groups: Grupos
+  close: Fechar
 
 es:
   language: Idioma
@@ -19,11 +21,16 @@ es:
   home: Home
   courses: Cursos
   groups: Grupos
+  close: Cerrar
 </i18n>
 
 
 <template>
   <nav class="fixed z-50 w-screen h-16 bg-white font-antonio">
+    <!-- overlay -->
+    <div class="fixed left-0 w-screen h-screen bg-gold top-16 opacity-20" :class="{'hidden': !langActive}" @click="langActive = false">
+    </div>
+
     <div class="flex items-center justify-between h-16 px-24">
       <div class="text-4xl font-bold tracking-widest uppercase select-none font-montserrat">
         <h4>B.</h4>
@@ -47,22 +54,20 @@ es:
       </ul>
     </div>
 
-    <ul class="fixed right-0 z-50 flex flex-col w-1/4 h-screen pt-8 bg-white select-none top-16 transform transition-all duration-200 ease-in-out"
+    <ul class="fixed right-0 z-50 flex flex-col w-1/4 h-screen pt-8 bg-white select-none top-16 transform transition duration-200 ease-in-out"
         :class="{'translate-x-0 h-screen flex': langActive, 'translate-x-full': !langActive}">
 
-      <li v-for="locale in $i18n.locales" :key="locale.code" class="text-black opacity-0" :class="{'anime': langActive}">
-        <div class="px-12 py-2 cursor-pointer"
+      <li v-for="locale in $i18n.locales" :key="locale.code" class="opacity-0" :class="{'anime': langActive}">
+        <div class="px-12 py-2 text-xl cursor-pointer"
              :class="{'text-black': locale.name === localeName, 'text-gray-600': locale.name !== localeName}"
              @click="() => { $i18n.setLocale(locale.code); langActive = false; }">
             {{ locale.name }}
           </div>
       </li>
 
-      <li class="flex flex-col justify-end flex-grow mb-24">
-        <div class="px-12 py-2 cursor-pointer" @click="langActive = !langActive">
-          <div>
-            {{ $t('back') }}
-          </div>
+      <li class="mt-8 opacity-0" :class="{'anime': langActive}">
+        <div class="px-12 py-2 text-xl cursor-pointer" @click="langActive = !langActive">
+          {{ $t('close') }}
         </div>
       </li>
     </ul>
