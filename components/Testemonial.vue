@@ -1,3 +1,12 @@
+<i18n lang="yaml">
+en:
+
+pt-BR:
+
+es:
+
+</i18n>
+
 <template>
   <div class="relative flex flex-col testemonial">
     <div class="quote">"</div>

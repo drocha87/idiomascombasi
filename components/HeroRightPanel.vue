@@ -1,8 +1,25 @@
+<i18n lang="yaml">
+en:
+  gretting: Hey, I'm
+  message: I help you speak ENGLISH and SPANISH confidently
+  button: Call me
+
+pt-BR:
+  gretting: Olá, eu sou a
+  message: Te ajudo a falar INGLÊS e ESPANHOL com confiança
+  button: fale comigo
+
+es:
+  gretting: Hola, yo soy
+  message: Te ayudo a hablar INGLÉS y ESPAÑOL con confianza
+  button: Contáctame
+</i18n>
+
 <template>
   <div class="mt-12 md:w-1/2">
     <div class="text-center">
       <div class="gretting">
-        Olá, eu sou a
+        {{ $t('gretting') }}
       </div>
       <div class="ml-12 -mt-4 text-center md:mt-0 font-dancing text-8xl md:text-9xl rotate">
         Basi
@@ -15,13 +32,13 @@
 
     <div class="description">
       <p class="ml-auto mr-4 max-w-3/4">
-      Te ajudo a falar INGLÊS e ESPANHOL com confiança
+      {{ $t('message') }}
       </p>
     </div>
 
 
     <div class="w-64 mx-auto my-12">
-      <Button href="https://euyo.me/idiomascombasi" target="_blank">fale comigo</Button>
+      <Button href="https://euyo.me/idiomascombasi" target="_blank">{{ $t('button') }}</Button>
     </div>
   </div>
 </template>

@@ -1,5 +1,30 @@
+<i18n lang="yaml">
+en:
+  labelOne: Testemonials
+  labelTwo: Español con Basi
+  labelThree: Learn with me
+  labelFour: Professional translations
+  labelFive: Groups
+
+pt-BR:
+  labelOne: Depoimentos
+  labelTwo: Español con Basi
+  labelThree: Estude comigo
+  labelFour: Traduções profisionais
+  labelFive: Grupos
+
+es:
+  labelOne: Testimonios
+  labelTwo: Español con Basi
+  labelThree: Estudia Conmigo
+  labelFour: Traducciones profesionales
+  labelFive: Grupos
+</i18n>
+
 <template>
   <div class="relative">
+    <!-- <LangInput /> -->
+
     <section class="main-container">
       <div class="detail-left">
         basilia santiago ©
@@ -10,29 +35,16 @@
       </MainContainer>
     </section>
 
-    <ContentSection title="Quem Sou" subtitle="Amo o que eu faço!">
-    <Paragraph>
-    Sou Colombiana, <Highlight>especialista</Highlight> no ensino de línguas estrangeiras,
-    com mais de 10 anos de <Highlight>experiência</Highlight>, pós-graduada
-    em inglês e nativa em espanhol.
-    </Paragraph>
+    <Whoiam />
 
-    <Paragraph>
-    Tenho ajudado meus alunos a se desenvolverem com
-    <Highlight>confiança</Highlight>, adquirindo
-    <Highlight>independência</Highlight> ao se expressarem tanto em inglês
-    quanto em espanhol.
-    </Paragraph>
-    </ContentSection>
-
-    <SectionDivider label="Depoimentos" />
+    <SectionDivider :label="$t('labelOne')" />
     <section class="flex justify-center py-8 mx-auto md:mb-12">
       <MainContainer>
       <Testemonials />
       </MainContainer>
     </section>
 
-    <SectionDivider label="Español con Basi" />
+    <SectionDivider :label="$t('labelTwo')" />
 
     <!-- Promotions -->
     <section>
@@ -44,21 +56,13 @@
       </div>
     </section>
 
-
-    <SectionDivider class="mt-12" label="Estude comigo" />
+    <SectionDivider class="mt-12" :label="$t('labelThree')" />
     <Courses id="courses" />
 
-    <SectionDivider label="Traduções profisionais" />
-    <ContentSection title="Traduções" subtitle="Amplie seu público-alvo" button-title="Faça seu Orçamento" url="https://euyo.me/idiomascombasi" >
-    <Paragraph>
-    <Highlight>Traduções profisionais em inglês e espanhol</Highlight>. Faça
-    seu conteúdo chegar a mais pessoas, <Highlight>potencializando os seus
-    resultados!</Highlight> Faça um orçamento sem compromisso entrando em
-    contato comigo pelo botão abaixo!
-    </Paragraph>
-    </ContentSection>
+    <SectionDivider :label="$t('labelFour')" />
+    <Translations />
 
-    <SectionDivider class="mt-12" label="Grupos" />
+    <SectionDivider class="mt-12" :label="$t('labelFive')" />
     <TelegramGroups id="telegram" />
   </div>
 </template>

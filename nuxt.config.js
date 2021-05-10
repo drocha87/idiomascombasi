@@ -91,18 +91,25 @@ export default {
     '@nuxt/typescript-build',
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
-    // '@nuxtjs/google-analytics',
   ],
 
-  // googleAnalytics: {
-  //   id: '271646054'
-  // },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    'nuxt-i18n',
   ],
+
+  i18n: {
+    vueI18nLoader: true,
+    defaultLocale: 'pt-BR',
+
+    locales: [{code: 'pt-BR', name: 'Português'}, { code: 'en', name: 'English'}, { code: 'es', name: 'Español' }],
+    vueI18n: {
+      fallbackLocale: 'pt-BR',
+    }
+  },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},

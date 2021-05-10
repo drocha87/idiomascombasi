@@ -34,9 +34,9 @@ export default Vue.extend({
   @apply relative leading-8 font-antonio tracking-widest transition-all duration-500 ease-in-out;
 }
 
-.btn-container:hover .content {
+/* .btn-container:hover .content {
   letter-spacing: 0.12rem;
-}
+}*/
 
 .content::after {
   @apply text-xl text-black absolute;

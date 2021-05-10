@@ -1,6 +1,18 @@
+<i18n lang="yaml">
+en:
+  title: Students about me
+
+pt-BR:
+  title: O que falam de mim
+
+es:
+  title: Lo que dicen de mí
+
+</i18n>
+
 <template>
   <div class="mx-auto md:max-w-3/4">
-    <Title>O que falam de mim</Title>
+    <Title>{{ $t('title') }}</Title>
     <ul ref="accordionContainer" class="px-8 md:p-0 md:mt-12">
       <li v-for="t in testemonials" :key="t.id" class="my-4 md:my-2">
         <a v-if="!t.visible" class="cursor-pointer focus:outline-none" @click="toggleVisibility(t)">
