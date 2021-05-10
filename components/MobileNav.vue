@@ -23,30 +23,31 @@ es:
 
 
 <template>
-  <nav class="fixed z-40 flex items-center justify-between w-screen h-16 px-8 mx-auto bg-white min-w-screen max-w-screen font-antonio">
+  <nav class="fixed z-40 flex items-center justify-between w-screen h-16 px-8 bg-white font-antonio">
     <div class="text-4xl font-bold tracking-widest uppercase font-montserrat">
       <h4>B.</h4>
     </div>
 
     <!-- overlay -->
-    <div class="fixed right-0 w-screen h-screen bg-black top-16 transform transition-all duration-200 ease-in-out opacity-20"
-      :class="{'translate-x-0 h-screen flex': active, 'translate-x-full': !active}"
-      @click="toggleNav()">
+    <div class="fixed left-0 w-screen h-screen bg-gold top-16 opacity-20" :class="{'hidden': !active}" @click="toggleNav()">
     </div>
 
-    <ul class="fixed right-0 z-50 flex flex-col w-3/4 h-screen pt-8 bg-white top-16 transform transition-all duration-200 ease-in-out"
-        :class="{'translate-x-0 h-screen flex': active, 'translate-x-full': !active}">
+    <ul class="fixed right-0 flex flex-col w-3/4 h-screen pt-8 bg-white top-16 transform transition duration-200 ease-in-out"
+        :class="{'translate-x-0': active, 'translate-x-full': !active}">
 
-      <li v-for="link in links" :key="link.label" class="text-black opacity-0" :class="{'anime': active}">
+      <li v-for="link in links"
+          :key="link.label"
+          class="opacity-0"
+          :class="{'anime': active, 'text-gray-600': $route.fullPath !== link.to}">
         <nuxt-link :to="localePath(link.to)" @click.native="toggleNav()">
-          <div class="px-12 py-2">
+          <div class="px-12 py-2 text-xl">
             {{ link.label }}
           </div>
         </nuxt-link>
       </li>
 
-      <li class="flex flex-col justify-end flex-grow mb-24 opacity-0" :class="{'anime': active}" @click="langActive = !langActive">
-        <div class="px-12 py-2">
+      <li class="flex flex-col opacity-0" :class="{'anime': active}" @click="langActive = !langActive">
+        <div class="px-12 py-2 text-xl">
           <div>
             {{ $t('language') }}
           </div>
@@ -57,31 +58,29 @@ es:
       </li>
     </ul>
 
-    <ul class="fixed right-0 z-50 flex flex-col w-3/4 h-screen pt-8 bg-white top-16 transform transition-all duration-200 ease-in-out"
-        :class="{'translate-x-0 h-screen flex': langActive, 'translate-x-full': !langActive}">
+    <ul class="fixed right-0 flex flex-col w-3/4 h-screen pt-8 bg-white top-16 transform transition duration-200 ease-in-out"
+        :class="{'translate-x-0': langActive, 'translate-x-full': !langActive}">
 
-      <li v-for="locale in $i18n.locales" :key="locale.code" class="text-black opacity-0" :class="{'anime': active}">
-        <div class="px-12 py-2"
+      <li v-for="locale in $i18n.locales" :key="locale.code" class="opacity-0" :class="{'anime': langActive}">
+        <div class="px-12 py-2 text-xl"
              :class="{'text-black': locale.name === localeName, 'text-gray-600': locale.name !== localeName}"
              @click="$i18n.setLocale(locale.code)">
             {{ locale.name }}
           </div>
       </li>
 
-      <li class="flex flex-col justify-end flex-grow mb-24">
-        <div class="px-12 py-2" @click="langActive = !langActive">
-          <div>
-            {{ $t('back') }}
-          </div>
+      <li>
+        <div class="px-12 py-2 text-xl opacity-0" :class="{'anime': langActive}" @click="langActive = !langActive">
+          {{ $t('back') }}
         </div>
       </li>
     </ul>
 
     <!-- burguer menu -->
-    <div class="relative flex flex-col justify-around w-6 h-6 cursor-pointer md:hidden" @click="toggleNav()">
+    <div class="relative flex items-center w-6 h-6 cursor-pointer" @click="toggleNav()">
       <div class="absolute top-0 w-full h-1 bg-gold transition-all duration-500 ease-in-out"
            :class="{'transform top-1/2 -translate-y-1/2 -rotate-45': active}"></div>
-      <div class="w-full h-1 bg-gold transition-all duration-500 delay-300 ease-out"
+      <div class="w-full h-1 bg-gold transition duration-500 delay-300 ease-out"
            :class="{'opacity-0': active}"></div>
       <div class="absolute bottom-0 w-full h-1 bg-gold transition-all duration-500 ease-in-out"
            :class="{'transform bottom-1/2 translate-y-1/2 rotate-45': active}"></div>
