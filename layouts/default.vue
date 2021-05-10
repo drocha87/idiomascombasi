@@ -29,28 +29,34 @@ es:
 
     <!-- Use a mt-16 to not override the navigation bar -->
     <Nuxt class="mt-16" />
-    <footer class="px-8 pt-12 pb-32 mt-48 text-sm tracking-wide text-black bg-gray-200 md:px-0 font-redhat">
+    <footer
+      class="px-8 pt-12 pb-32 mt-48 text-sm tracking-wide text-black bg-gray-200 md:px-0 font-redhat"
+    >
       <ContainerRow class="mx-auto">
-      <div>
-        <p class="text-lg" style="color: #C6A869">{{ $t('title') }}</p>
-        <p class="mt-4 text-2xl text-gray-900">{{ $t('subtitle') }}</p>
+        <div>
+          <p class="text-lg" style="color: #c6a869">{{ $t('title') }}</p>
+          <p class="mt-4 text-2xl text-gray-900">{{ $t('subtitle') }}</p>
 
-        <p class="mt-2 font-medium text-gray-500">
-        <a href="mailto:basi@idiomascombasi.com.br">basi@idiomascombasi.com.br</a>
-        </p>
-      </div>
-      <div class="mt-8 text-base text-gold">
-        <nuxt-link to="/legal">
-          {{ $t('terms') }}
-        </nuxt-link>
-      </div>
-      <div class="mt-6 text-gray-500">
-        © 2021 Basilia Santiago. All rights reserved. <br>
-        Site by <a class="underline" href="https://euyo.me/diego" target="_blank"> Diego Rocha.  </a>
-      </div>
+          <p class="mt-2 font-medium text-gray-500">
+            <a href="mailto:basi@idiomascombasi.com.br">
+              basi@idiomascombasi.com.br
+            </a>
+          </p>
+        </div>
+        <div class="mt-8 text-base text-gold">
+          <nuxt-link to="/legal">
+            {{ $t('terms') }}
+          </nuxt-link>
+        </div>
+        <div class="mt-6 text-gray-500">
+          © 2021 Basilia Santiago. All rights reserved. <br />
+          Site by
+          <a class="underline" href="https://euyo.me/diego" target="_blank">
+            Diego Rocha.
+          </a>
+        </div>
       </ContainerRow>
     </footer>
-
   </div>
 </template>
 
