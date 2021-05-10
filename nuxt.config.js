@@ -103,8 +103,9 @@ export default {
 
   i18n: {
     vueI18nLoader: true,
-    locales: ['pt-BR', 'en', 'es'],
     defaultLocale: 'pt-BR',
+
+    locales: [{code: 'pt-BR', name: 'Português'}, { code: 'en', name: 'English'}, { code: 'es', name: 'Español' }],
     vueI18n: {
       fallbackLocale: 'pt-BR',
     }

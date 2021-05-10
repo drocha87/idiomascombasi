@@ -13,15 +13,19 @@ es:
 </i18n>
 
 <template>
-  <div>
-    <DesktopNavBar />
+  <div class="overflow-x-hidden">
+    <!-- <DesktopNavBar /> -->
+    <MobileNav class="md:hidden" />
+    <DesktopNav class="hidden md:block" />
+
     <!-- <a href="https://euyo.me/speakniceidiomas/608462842dd4910e7277457a" target="_blank"> -->
     <!--   <div class="info-action"> -->
     <!--     Faça parte do nosso grupo de espanhol no telegram -->
     <!--   </div> -->
     <!-- </a> -->
 
-    <Nuxt />
+    <!-- Use a mt-16 to not override the navigation bar -->
+    <Nuxt class="mt-16" />
     <footer class="px-8 pt-12 pb-32 mt-48 text-sm tracking-wide text-black bg-gray-200 md:px-0 font-redhat">
       <ContainerRow class="mx-auto">
       <div>
@@ -68,7 +72,6 @@ html {
   background: #ffd60a;
   color: black;
 }
-
 
 .info-action {
   @apply font-antonio font-medium tracking-wider bg-black md:bg-white md:text-black text-white text-center uppercase md:shadow-md;

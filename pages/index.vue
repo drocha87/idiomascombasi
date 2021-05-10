@@ -23,6 +23,8 @@ es:
 
 <template>
   <div class="relative">
+    <!-- <LangInput /> -->
+
     <section class="main-container">
       <div class="detail-left">
         basilia santiago ©
