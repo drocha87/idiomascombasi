@@ -2,14 +2,17 @@
 en:
   title: Drop me a line
   subtitle: Looking forward to hearing from you.
+  terms: Terms and Conditions
 
 pt-BR:
   title: Deixe-me uma mensagem
   subtitle: Ansiosa para saber mais sobre você
+  terms: Termos e Condições
 
 es:
   title: Escríbeme un mensaje
   subtitle: Estoy ansiosa por saber de ti
+  terms: Termos e Condições
 </i18n>
 
 <template>
@@ -36,7 +39,12 @@ es:
         <a href="mailto:basi@idiomascombasi.com.br">basi@idiomascombasi.com.br</a>
         </p>
       </div>
-      <div class="mt-12 text-gray-500">
+      <div class="mt-8 text-base text-gold">
+        <nuxt-link to="/legal">
+          {{ $t('terms') }}
+        </nuxt-link>
+      </div>
+      <div class="mt-6 text-gray-500">
         © 2021 Basilia Santiago. All rights reserved. <br>
         Site by <a class="underline" href="https://euyo.me/diego" target="_blank"> Diego Rocha.  </a>
       </div>
