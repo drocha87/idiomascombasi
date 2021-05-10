@@ -5,6 +5,7 @@ en:
   home: Home
   courses: Courses
   groups: Groups
+  ebook: Ebook
 
 pt-BR:
   language: Idioma
@@ -12,6 +13,7 @@ pt-BR:
   home: Home
   courses: Cursos
   groups: Grupos
+  ebook: Ebook
 
 es:
   language: Idioma
@@ -19,6 +21,7 @@ es:
   home: Home
   courses: Cursos
   groups: Grupos
+  ebook: Ebook
 </i18n>
 
 
@@ -41,7 +44,7 @@ es:
           :class="{'anime': active, 'text-gray-600': $route.fullPath !== link.to}">
         <nuxt-link :to="localePath(link.to)" @click.native="toggleNav()">
           <div class="px-12 py-2 text-xl">
-            {{ link.label }}
+            {{ $t(link.label) }}
           </div>
         </nuxt-link>
       </li>
@@ -100,20 +103,7 @@ export default Vue.extend({
 
   computed: {
     links(): any[] {
-      return [
-        {
-          label: this.$t('home'),
-          to: '/',
-        },
-        {
-          label: this.$t('courses'),
-          to: '/#courses',
-        },
-        {
-          label: this.$t('groups'),
-          to: '/#telegram',
-        },
-      ]
+      return this.$store.state.links;
     },
 
     localeName(): string {

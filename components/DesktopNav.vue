@@ -6,6 +6,7 @@ en:
   courses: Courses
   groups: Groups
   close: Close
+  ebook: Ebook
 
 pt-BR:
   language: Idioma
@@ -14,6 +15,7 @@ pt-BR:
   courses: Cursos
   groups: Grupos
   close: Fechar
+  ebook: Ebook
 
 es:
   language: Idioma
@@ -22,6 +24,7 @@ es:
   courses: Cursos
   groups: Grupos
   close: Cerrar
+  ebook: Ebook
 </i18n>
 
 
@@ -39,7 +42,7 @@ es:
       <ul class="flex items-center justify-around tracking-wider select-none min-w-1/2">
         <li v-for="link in links" :key="link.label" class="text-black">
           <nuxt-link :to="localePath(link.to)" @click.native="langActive = false">
-            {{ link.label }}
+            {{ $t(link.label) }}
           </nuxt-link>
         </li>
 
@@ -85,20 +88,7 @@ export default Vue.extend({
 
   computed: {
     links(): any[] {
-      return [
-        {
-          label: this.$t('home'),
-          to: '/',
-        },
-        {
-          label: this.$t('courses'),
-          to: '/#courses',
-        },
-        {
-          label: this.$t('groups'),
-          to: '/#telegram',
-        },
-      ]
+      return this.$store.state.links;
     },
 
     localeName(): string {
