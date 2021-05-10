@@ -4,8 +4,9 @@
       class="btn-container"
       style="min-height: 2rem"
       @mouseover="hover = true"
-      @mouseleave="hover = false">
-      <div class="content borderColor" :class="{'small': small }" >
+      @mouseleave="hover = false"
+    >
+      <div class="content borderColor" :class="{ small: small }">
         <slot></slot>
       </div>
     </div>
@@ -20,7 +21,7 @@ export default Vue.extend({
   props: {
     small: { type: Boolean, default: false },
     borderColor: { type: String, default: 'border-primary' },
-  }
+  },
 })
 </script>
 
@@ -40,7 +41,7 @@ export default Vue.extend({
 
 .content::after {
   @apply text-xl text-black absolute;
-  content: ">";
+  content: '>';
   height: 2rem;
   right: -20px;
   top: 50%;

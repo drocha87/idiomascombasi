@@ -15,7 +15,7 @@ en:
     Private or Pairs classes in English or Spanish, with a duration of one hour
     through the Zoom platform. Flexible schedules and with the material on my
     own, you will study the desired language at your own pace and with current
-    topics, schedule your free sample class. 
+    topics, schedule your free sample class.
 
   titleThree: Group classes
   subtitleThree: You and us
@@ -25,7 +25,6 @@ en:
     your class time with other people who have the same goal as you. Check
     available schedules and take your first class for free.
 
-
 pt-BR:
   titleOne: Aprenda com Basi
   subtitleOne: Sim, eu posso!
@@ -34,7 +33,6 @@ pt-BR:
     Atualmente tenho trabalhado com aulas online VIP ou em grupo, e tenho
     certeza que eu tenho as qualidades necessárias para te ajudar a dar o
     próximo passo no desenvolvimento e na confiança do seu inglês ou espanhol!!
-
 
   titleTwo: Aulas VIP ou em Dupla
   subtitleTwo: Você e eu!
@@ -84,26 +82,33 @@ es:
 
 <template>
   <div>
-    <ContentSection :title="$t('titleOne')"
-                    :subtitle="$t('subtitleOne')"
-                    :button-title="$t('buttonOne')" url="https://euyo.me/idiomascombasi"
-                    left>
-    <Paragraph>{{ $t('contentOne') }}</Paragraph>
+    <ContentSection
+      :title="$t('titleOne')"
+      :subtitle="$t('subtitleOne')"
+      :button-title="$t('buttonOne')"
+      url="https://euyo.me/idiomascombasi"
+      left
+    >
+      <Paragraph>{{ $t('contentOne') }}</Paragraph>
     </ContentSection>
 
-    <ContentSection :title="$t('titleTwo')"
-                    :subtitle="$t('subtitleTwo')"
-                    :buttonTitle="$t('buttonTwo')"
-                    url="https://euyo.me/idiomascombasi">
-    <Paragraph>{{ $t('contentTwo') }}</Paragraph>
+    <ContentSection
+      :title="$t('titleTwo')"
+      :subtitle="$t('subtitleTwo')"
+      :button-title="$t('buttonTwo')"
+      url="https://euyo.me/idiomascombasi"
+    >
+      <Paragraph>{{ $t('contentTwo') }}</Paragraph>
     </ContentSection>
 
-    <ContentSection :title="$t('titleThree')"
-                    :subtitle="$t('subtitleThree')"
-                    :buttonTitle="$t('buttonThree')"
-                    url="https://euyo.me/idiomascombasi"
-                    left>
-    <Paragraph>{{ $t('contentThree') }}</Paragraph>
+    <ContentSection
+      :title="$t('titleThree')"
+      :subtitle="$t('subtitleThree')"
+      :button-title="$t('buttonThree')"
+      url="https://euyo.me/idiomascombasi"
+      left
+    >
+      <Paragraph>{{ $t('contentThree') }}</Paragraph>
     </ContentSection>
   </div>
 </template>

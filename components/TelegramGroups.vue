@@ -3,7 +3,7 @@ en:
   title: Telegram Group
   content: >-
     If you want to receive content and keep an active contact with the language
-    #ENGLISH or #SPANISH, I invite you to participate in my telegram group.  In
+    #ENGLISH or #SPANISH, I invite you to participate in my telegram group. In
     addition to receiving tips and having contact with the language, you can
     also take quizzes, listen to audios and much more.
 
@@ -36,27 +36,38 @@ es:
 <template>
   <section class="relative flex justify-center mt-12 md:mt-12">
     <ContainerRow>
-    <Title>{{ $t('title') }}</Title>
-    <p class="px-8 tracking-wide text-gray-600 font-redhat md:p-0">
-    {{ $t('content') }}
-    </p>
-    <div class="flex flex-col mx-auto mt-14 md:flex-row md:justify-between max-w-3/4 min-w-3/4 ">
-      <div class="w-64 mx-auto md:w-72">
-        <Button href="https://euyo.me/speakniceidiomas/608462842dd4910e7277457a" target="_blank" @mouseover="spanishHover = true" @mouseleave="spanishHover = false">
-          {{ spanishHover ? "hablemos español" : $t('buttonSpanish')}}
-        </Button>
+      <Title>{{ $t('title') }}</Title>
+      <p class="px-8 tracking-wide text-gray-600 font-redhat md:p-0">
+        {{ $t('content') }}
+      </p>
+      <div
+        class="flex flex-col mx-auto mt-14 md:flex-row md:justify-between max-w-3/4 min-w-3/4"
+      >
+        <div class="w-64 mx-auto md:w-72">
+          <Button
+            href="https://euyo.me/speakniceidiomas/608462842dd4910e7277457a"
+            target="_blank"
+            @mouseover="spanishHover = true"
+            @mouseleave="spanishHover = false"
+          >
+            {{ spanishHover ? 'hablemos español' : $t('buttonSpanish') }}
+          </Button>
+        </div>
+        <div class="hidden w-32 md:block"></div>
+        <div class="w-64 mx-auto mt-8 md:w-72 md:mt-0">
+          <Button
+            href="https://euyo.me/speakniceidiomas/60005f5857eb320017134754"
+            target="_blank"
+            @mouseover="englishHover = true"
+            @mouseleave="englishHover = false"
+          >
+            {{ englishHover ? "let's speak english" : $t('buttonEnglish') }}
+          </Button>
+        </div>
       </div>
-      <div class="hidden w-32 md:block"></div>
-      <div class="w-64 mx-auto mt-8 md:w-72 md:mt-0">
-        <Button href="https://euyo.me/speakniceidiomas/60005f5857eb320017134754" target="_blank" @mouseover="englishHover = true" @mouseleave="englishHover = false">
-          {{ englishHover ? "let's speak english" :  $t('buttonEnglish')}}
-        </Button>
-      </div>
-    </div>
     </ContainerRow>
   </section>
 </template>
-
 
 <script lang="ts">
 import Vue from 'vue'
@@ -66,6 +77,6 @@ export default Vue.extend({
       spanishHover: false,
       englishHover: false,
     }
-  }
+  },
 })
 </script>

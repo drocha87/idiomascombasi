@@ -1,18 +1,19 @@
-export const purge = [];
-export const darkMode = false;
+export const purge = []
+export const darkMode = false
 
 export const theme = {
   extend: {
     fontFamily: {
-      'antonio': ['Antonio', 'sans-serif'],
-      'dancing': ['Dancing Script', 'cursive'],
-      'redhat': ['Red Hat Display', 'sans-serif'],
-      'raleway': ['Raleway', 'sans-serif'],
-      'montserrat': ['Montserrat', 'sans-serif'],
+      antonio: ['Antonio', 'sans-serif'],
+      dancing: ['Dancing Script', 'cursive'],
+      redhat: ['Red Hat Display', 'sans-serif'],
+      raleway: ['Raleway', 'sans-serif'],
+      montserrat: ['Montserrat', 'sans-serif'],
     },
 
     backgroundImage: {
-      'hero-image': "url('https://res.cloudinary.com/euyome/image/upload/v1620067471/idiomascombasi/basi_hero_wider_ehkspo.jpg')",
+      'hero-image':
+        "url('https://res.cloudinary.com/euyome/image/upload/v1620067471/idiomascombasi/basi_hero_wider_ehkspo.jpg')",
     },
 
     maxWidth: {
@@ -37,9 +38,9 @@ export const theme = {
       'max-height': 'max-height',
     },
   },
-};
+}
 
 export const variants = {
   extend: {},
-};
-export const plugins = [];
+}
+export const plugins = []

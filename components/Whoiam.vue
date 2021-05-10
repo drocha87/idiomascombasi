@@ -37,13 +37,12 @@ es:
 </i18n>
 
 <template>
-    <ContentSection :title="$t('title')" :subtitle="$t('subtitle')">
+  <ContentSection :title="$t('title')" :subtitle="$t('subtitle')">
     <Paragraph>
-    {{ $t('pOne') }}
+      {{ $t('pOne') }}
     </Paragraph>
     <Paragraph>
-    {{ $t('pTwo') }}
+      {{ $t('pTwo') }}
     </Paragraph>
-    </ContentSection>
+  </ContentSection>
 </template>
-
