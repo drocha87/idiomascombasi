@@ -38,13 +38,27 @@ es:
 
     <div class="flex items-center justify-between h-16 px-24">
       <div
-        class="text-4xl font-bold tracking-widest uppercase select-none font-montserrat"
+        class="
+          text-4xl
+          font-bold
+          tracking-widest
+          uppercase
+          select-none
+          font-montserrat
+        "
       >
         <h4>B.</h4>
       </div>
 
       <ul
-        class="flex items-center justify-around tracking-wider select-none min-w-1/2"
+        class="
+          flex
+          items-center
+          justify-around
+          tracking-wider
+          select-none
+          min-w-1/2
+        "
       >
         <li v-for="link in links" :key="link.label" class="text-black">
           <nuxt-link
@@ -60,7 +74,13 @@ es:
             {{ $t('language') }}
           </div>
           <div
-            class="text-xs font-medium tracking-wide text-gray-600 font-montserrat"
+            class="
+              text-xs
+              font-medium
+              tracking-wide
+              text-gray-600
+              font-montserrat
+            "
           >
             {{ localeName }}
           </div>
@@ -69,7 +89,22 @@ es:
     </div>
 
     <ul
-      class="fixed right-0 z-50 flex flex-col w-1/4 h-screen pt-8 bg-white select-none top-16 transform transition duration-200 ease-in-out"
+      class="
+        fixed
+        right-0
+        z-50
+        flex flex-col
+        w-1/4
+        h-screen
+        pt-8
+        bg-white
+        select-none
+        top-16
+        transform
+        transition
+        duration-200
+        ease-in-out
+      "
       :class="{
         'translate-x-0 h-screen flex': langActive,
         'translate-x-full': !langActive,

@@ -26,7 +26,18 @@ es:
 
 <template>
   <nav
-    class="fixed z-40 flex items-center justify-between w-screen h-16 px-8 bg-white font-antonio"
+    class="
+      fixed
+      z-40
+      flex
+      items-center
+      justify-between
+      w-screen
+      h-16
+      px-8
+      bg-white
+      font-antonio
+    "
   >
     <div class="text-4xl font-bold tracking-widest uppercase font-montserrat">
       <h4>B.</h4>
@@ -40,7 +51,20 @@ es:
     ></div>
 
     <ul
-      class="fixed right-0 flex flex-col w-3/4 h-screen pt-8 bg-white top-16 transform transition duration-200 ease-in-out"
+      class="
+        fixed
+        right-0
+        flex flex-col
+        w-3/4
+        h-screen
+        pt-8
+        bg-white
+        top-16
+        transform
+        transition
+        duration-200
+        ease-in-out
+      "
       :class="{ 'translate-x-0': active, 'translate-x-full': !active }"
     >
       <li
@@ -66,7 +90,13 @@ es:
             {{ $t('language') }}
           </div>
           <div
-            class="text-xs font-medium tracking-wide text-gray-600 font-montserrat"
+            class="
+              text-xs
+              font-medium
+              tracking-wide
+              text-gray-600
+              font-montserrat
+            "
           >
             {{ localeName }}
           </div>
@@ -75,7 +105,20 @@ es:
     </ul>
 
     <ul
-      class="fixed right-0 flex flex-col w-3/4 h-screen pt-8 bg-white top-16 transform transition duration-200 ease-in-out"
+      class="
+        fixed
+        right-0
+        flex flex-col
+        w-3/4
+        h-screen
+        pt-8
+        bg-white
+        top-16
+        transform
+        transition
+        duration-200
+        ease-in-out
+      "
       :class="{ 'translate-x-0': langActive, 'translate-x-full': !langActive }"
     >
       <li
@@ -113,7 +156,16 @@ es:
       @click="toggleNav()"
     >
       <div
-        class="absolute top-0 w-full h-1 bg-gold transition-all duration-500 ease-in-out"
+        class="
+          absolute
+          top-0
+          w-full
+          h-1
+          bg-gold
+          transition-all
+          duration-500
+          ease-in-out
+        "
         :class="{ 'transform top-1/2 -translate-y-1/2 -rotate-45': active }"
       ></div>
       <div
@@ -121,7 +173,16 @@ es:
         :class="{ 'opacity-0': active }"
       ></div>
       <div
-        class="absolute bottom-0 w-full h-1 bg-gold transition-all duration-500 ease-in-out"
+        class="
+          absolute
+          bottom-0
+          w-full
+          h-1
+          bg-gold
+          transition-all
+          duration-500
+          ease-in-out
+        "
         :class="{ 'transform bottom-1/2 translate-y-1/2 rotate-45': active }"
       ></div>
     </div>

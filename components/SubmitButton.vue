@@ -1,5 +1,10 @@
 <template>
-  <a v-bind="$attrs" v-on="$listeners">
+  <button
+    class="focus:outline-none"
+    type="submit"
+    v-bind="$attrs"
+    v-on="$listeners"
+  >
     <div
       class="btn-container"
       style="min-height: 2rem"
@@ -10,7 +15,7 @@
         <slot></slot>
       </div>
     </div>
-  </a>
+  </button>
 </template>
 
 <script lang="ts">

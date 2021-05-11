@@ -41,7 +41,15 @@ es:
         {{ $t('content') }}
       </p>
       <div
-        class="flex flex-col mx-auto mt-14 md:flex-row md:justify-between max-w-3/4 min-w-3/4"
+        class="
+          flex flex-col
+          mx-auto
+          mt-14
+          md:flex-row
+          md:justify-between
+          max-w-3/4
+          min-w-3/4
+        "
       >
         <div class="w-64 mx-auto md:w-72">
           <Button

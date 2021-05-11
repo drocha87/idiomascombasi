@@ -30,7 +30,18 @@ es:
     <!-- Use a mt-16 to not override the navigation bar -->
     <Nuxt class="mt-16" />
     <footer
-      class="px-8 pt-12 pb-32 mt-48 text-sm tracking-wide text-black bg-gray-200 md:px-0 font-redhat"
+      class="
+        px-8
+        pt-12
+        pb-32
+        mt-48
+        text-sm
+        tracking-wide
+        text-black
+        bg-gray-200
+        md:px-0
+        font-redhat
+      "
     >
       <ContainerRow class="mx-auto">
         <div>
