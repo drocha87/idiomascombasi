@@ -45,7 +45,7 @@ export default {
         hid: 'og:image',
         property: 'og:image',
         content:
-        'https://res.cloudinary.com/euyome/image/upload/v1620069177/idiomascombasi/og_image_waqy0a.jpg',
+          'https://res.cloudinary.com/euyome/image/upload/v1620069177/idiomascombasi/og_image_waqy0a.jpg',
       },
       {
         hid: 'og:image:alt',
@@ -66,14 +66,7 @@ export default {
     htmlAttrs: {
       lang: 'en',
     },
-    meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
-    ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-    ],
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -93,7 +86,6 @@ export default {
     '@nuxtjs/tailwindcss',
   ],
 
-
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/axios
@@ -105,10 +97,14 @@ export default {
     vueI18nLoader: true,
     defaultLocale: 'pt-BR',
 
-    locales: [{code: 'pt-BR', name: 'Português'}, { code: 'en', name: 'English'}, { code: 'es', name: 'Español' }],
+    locales: [
+      { code: 'pt-BR', name: 'Português' },
+      { code: 'en', name: 'English' },
+      { code: 'es', name: 'Español' },
+    ],
     vueI18n: {
       fallbackLocale: 'pt-BR',
-    }
+    },
   },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios

@@ -9,7 +9,7 @@ import Vue from 'vue'
 export default Vue.extend({
   props: {
     color: { type: String, default: '#A7DADC' },
-  }
+  },
 })
 </script>
 

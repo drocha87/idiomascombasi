@@ -7,7 +7,7 @@ en:
   content: >-
     Professional translations in English and Spanish. Make your content reach
     more people, boosting your results. Make a free quote, contact me by
-    clicking on the button below! 
+    clicking on the button below!
 
 pt-BR:
   title: Traduções
@@ -27,13 +27,18 @@ es:
   content: >-
     Traducciones profesionales en Inglés y Español. Haz que tu contenido llegue a
     más personas, potencializando tus resultados. ¡Haz una cotización sin
-    compromiso, entra en contacto conmigo clicando en el botón de abajo! 
+    compromiso, entra en contacto conmigo clicando en el botón de abajo!
 </i18n>
 
 <template>
-  <ContentSection :title="$t('title')" :subtitle="$t('subtitle')" :button-title="$t('button')" url="https://euyo.me/idiomascombasi" >
-  <Paragraph>
-  {{ $t('content') }}
-  </Paragraph>
+  <ContentSection
+    :title="$t('title')"
+    :subtitle="$t('subtitle')"
+    :button-title="$t('button')"
+    url="https://euyo.me/idiomascombasi"
+  >
+    <Paragraph>
+      {{ $t('content') }}
+    </Paragraph>
   </ContentSection>
 </template>

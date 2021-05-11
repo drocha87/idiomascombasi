@@ -28,10 +28,10 @@ es:
     <section class="main-container">
       <div class="detail-left">
         basilia santiago ©
-        <div class="w-24 h-1 mr-12 bg-white "></div>
+        <div class="w-24 h-1 mr-12 bg-white"></div>
       </div>
       <MainContainer>
-      <HeroRightPanel class="md:ml-auto md:self-center"/>
+        <HeroRightPanel class="md:ml-auto md:self-center" />
       </MainContainer>
     </section>
 
@@ -40,7 +40,7 @@ es:
     <SectionDivider :label="$t('labelOne')" />
     <section class="flex justify-center py-8 mx-auto md:mb-12">
       <MainContainer>
-      <Testemonials />
+        <Testemonials />
       </MainContainer>
     </section>
 
@@ -48,8 +48,15 @@ es:
 
     <!-- Promotions -->
     <section>
-      <a class="md:hidden" href="https://euyo.me/speakniceidiomas/608702ff2dd4910e727747bb" target="_blank">
-        <img src="https://res.cloudinary.com/euyome/image/upload/v1619895563/idiomascombasi/conversation-group-banner_ltmnl5.jpg" alt="">
+      <a
+        class="md:hidden"
+        href="https://euyo.me/speakniceidiomas/608702ff2dd4910e727747bb"
+        target="_blank"
+      >
+        <img
+          src="https://res.cloudinary.com/euyome/image/upload/v1619895563/idiomascombasi/conversation-group-banner_ltmnl5.jpg"
+          alt=""
+        />
       </a>
       <div class="hidden md:block">
         <SpanishWithBasi />
@@ -71,19 +78,10 @@ es:
 import Vue from 'vue'
 
 export default Vue.extend({
-  methods: {
-    goto(url: string) {
-      window.open(url, '_blank');
-    },
-
-    gotoEuyome() {
-      window.open('https://euyo.me/speakniceidiomas/6089dd252dd4910e72774c63', '_blank');
-    }
-  },
-
   head() {
-    const title = 'Idiomas com Basi';
-    const description = 'Olá, eu sou a Basilia especialista em Inglês e Espanhol';
+    const title = 'Idiomas com Basi'
+    const description =
+      'Olá, eu sou a Basilia especialista em Inglês e Espanhol'
 
     return {
       title,
@@ -137,23 +135,36 @@ export default Vue.extend({
           content: '500',
         },
       ],
-    };
+    }
+  },
+
+  methods: {
+    goto(url: string) {
+      window.open(url, '_blank')
+    },
+
+    gotoEuyome() {
+      window.open(
+        'https://euyo.me/speakniceidiomas/6089dd252dd4910e72774c63',
+        '_blank'
+      )
+    },
   },
 })
 </script>
 
 <style lang="postcss">
 .main-container {
-  @apply m-0 relative flex min-w-full justify-center text-center  md:bg-hero-image md:bg-contain md:bg-no-repeat md:bg-left;
+  @apply m-0 relative flex min-w-full justify-center text-center md:bg-hero-image md:bg-contain md:bg-no-repeat md:bg-left;
   min-height: 80vh;
 }
 
-.detail-right{
+.detail-right {
   @apply fixed hidden md:block bg-white px-12 font-antonio tracking-widest
   leading-10 transform -rotate-90 top-1/2 -right-16 border border-black;
 }
 
-.detail-left{
+.detail-left {
   @apply absolute hidden md:block bg-transparent font-antonio tracking-widest text-xs uppercase
   leading-10 transform -rotate-90 top-3/4 -left-12;
 }

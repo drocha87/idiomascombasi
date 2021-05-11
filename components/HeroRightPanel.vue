@@ -21,24 +21,30 @@ es:
       <div class="gretting">
         {{ $t('gretting') }}
       </div>
-      <div class="ml-12 -mt-4 text-center md:mt-0 font-dancing text-8xl md:text-9xl rotate">
+      <div
+        class="ml-12 -mt-4 text-center md:mt-0 font-dancing text-8xl md:text-9xl rotate"
+      >
         Basi
       </div>
     </div>
 
     <div class="relative mx-auto mt-8 md:hidden">
-      <img src="https://res.cloudinary.com/euyome/image/upload/v1619895616/idiomascombasi/basi_hero_mobile_hef21a.jpg" alt="Basilia Santiago">
+      <img
+        src="https://res.cloudinary.com/euyome/image/upload/v1619895616/idiomascombasi/basi_hero_mobile_hef21a.jpg"
+        alt="Basilia Santiago"
+      />
     </div>
 
     <div class="description">
       <p class="ml-auto mr-4 max-w-3/4">
-      {{ $t('message') }}
+        {{ $t('message') }}
       </p>
     </div>
 
-
     <div class="w-64 mx-auto my-12">
-      <Button href="https://euyo.me/idiomascombasi" target="_blank">{{ $t('button') }}</Button>
+      <Button href="https://euyo.me/idiomascombasi" target="_blank">{{
+        $t('button')
+      }}</Button>
     </div>
   </div>
 </template>
@@ -48,9 +54,9 @@ import Vue from 'vue'
 export default Vue.extend({
   methods: {
     gotoEuyome() {
-      window.open('', '_blank');
-    }
-  }
+      window.open('', '_blank')
+    },
+  },
 })
 </script>
 
@@ -66,7 +72,7 @@ export default Vue.extend({
 
 .description::after {
   @apply absolute bg-gold h-full;
-  content: "";
+  content: '';
   width: 6px;
   right: 0;
   top: 0;
