@@ -6,7 +6,7 @@
       @mouseover="hover = true"
       @mouseleave="hover = false"
     >
-      <div class="content borderColor" :class="{ small: small }">
+      <div class="content borderColor select-none" :class="{ small: small }">
         <slot></slot>
       </div>
     </div>

@@ -31,7 +31,13 @@
           </div>
 
           <div
-            class="flex items-center justify-end text-5xl font-bold font-antonio"
+            class="
+              flex
+              items-center
+              justify-end
+              text-5xl
+              font-bold font-antonio
+            "
             :class="{ 'md:flex-row-reverse': left }"
           >
             <div

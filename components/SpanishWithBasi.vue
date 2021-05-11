@@ -39,7 +39,12 @@ es:
           {{ $t('title') }}
         </p>
         <p
-          class="text-base tracking-wider text-gray-800 font-redhat font-regular"
+          class="
+            text-base
+            tracking-wider
+            text-gray-800
+            font-redhat font-regular
+          "
         >
           {{ $t('content') }}
         </p>

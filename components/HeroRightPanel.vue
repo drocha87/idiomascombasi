@@ -22,7 +22,16 @@ es:
         {{ $t('gretting') }}
       </div>
       <div
-        class="ml-12 -mt-4 text-center md:mt-0 font-dancing text-8xl md:text-9xl rotate"
+        class="
+          ml-12
+          -mt-4
+          text-center
+          md:mt-0
+          font-dancing
+          text-8xl
+          md:text-9xl
+          rotate
+        "
       >
         Basi
       </div>
