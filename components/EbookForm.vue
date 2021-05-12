@@ -53,6 +53,12 @@ es:
         <p v-if="errorMessage !== ''" class="text-sm mt-2 text-red-500">
           {{ errorMessage }}
         </p>
+        <p
+          v-if="successMessage !== ''"
+          class="text-sm mt-2 text-green-700 font-redhat"
+        >
+          {{ successMessage }}
+        </p>
         <SubmitButton class="mt-8 block"> Receber E-Book </SubmitButton>
         <p class="mt-8 text-xs text-gray-600 font-redhat">
           {{ $t('conditions') }}
@@ -72,6 +78,7 @@ export default Vue.extend({
       name: '',
       email: '',
       errorMessage: '',
+      successMessage: '',
     }
   },
 
@@ -96,6 +103,10 @@ export default Vue.extend({
         }
         this.errorMessage = ''
         await this.$axios.post('/ebook', { name: this.name, email: this.email })
+
+        this.email = ''
+        this.name = ''
+        this.successMessage = 'Parabéns seu E-Book foi enviado com sucesso'
       } catch (err) {
         this.errorMessage = err.message || err.data.message
       }
