@@ -109,7 +109,7 @@ export default {
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
-    baseUrl: 'http://localhost:3333',
+    baseUrl: 'https://api.idiomascombasi.com.br',
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

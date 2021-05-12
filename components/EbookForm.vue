@@ -50,6 +50,9 @@ es:
           required
           error-message="O formato do seu email é inválido."
         />
+        <p v-if="errorMessage !== ''" class="text-sm mt-2 text-red-500">
+          {{ errorMessage }}
+        </p>
         <SubmitButton class="mt-8 block"> Receber E-Book </SubmitButton>
         <p class="mt-8 text-xs text-gray-600 font-redhat">
           {{ $t('conditions') }}
@@ -68,6 +71,7 @@ export default Vue.extend({
     return {
       name: '',
       email: '',
+      errorMessage: '',
     }
   },
 
@@ -79,12 +83,21 @@ export default Vue.extend({
       return 'Email inválido'
     },
 
-    sendEbook() {
+    async sendEbook() {
       try {
-        // console.log(this.name, this.email)
-        // await this.$axios.post('/ebook', { name: this.name, email: this.email })
+        if (this.name === '') {
+          throw new Error(
+            'Vou precisar que você preencha o campo "Como posso te chamar"'
+          )
+        }
+
+        if (!emailIsValid(this.email)) {
+          throw new Error('Email inválido')
+        }
+        this.errorMessage = ''
+        await this.$axios.post('/ebook', { name: this.name, email: this.email })
       } catch (err) {
-        console.log(err)
+        this.errorMessage = err.message || err.data.message
       }
     },
   },
