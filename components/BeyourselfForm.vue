@@ -7,14 +7,12 @@ en:
   inputEmail:
 
 pt-BR:
-  conditions: >-
-    Você irá receber meu conteúdo regularmente, sobre várias outras
-    dicas. Se por acaso você não estiver interessado(a) em receber este
-    tipo de conteúdo, você pode sair a qualquer momento da minha lista de envios.
-
   description: >-
-    Para receber este e-book é muito simples, basta você colocar seu nome e um email válido nos campos
-    abaixo e aí eu te envio ele por email tá
+    Para participar das aulas, basta você preencher os campos abaixo, e ficar atenta a
+    seus emails. As aulas serão com turmas reduzidas, por isso já reserve seu lugar
+    agora mesmo
+  conditions: >-
+    As aulas serão pela plataforma Zoom. O material será enviado na semana da aula no formato PDF.
 
   button:
   inputEmail:
@@ -59,7 +57,7 @@ es:
         >
           {{ successMessage }}
         </p>
-        <SubmitButton class="mt-8 block"> Receber E-Book </SubmitButton>
+        <SubmitButton class="mt-8 block"> Quero Participar </SubmitButton>
         <p class="mt-8 text-xs text-gray-600 font-redhat">
           {{ $t('conditions') }}
         </p>
@@ -102,14 +100,15 @@ export default Vue.extend({
           throw new Error('Email inválido')
         }
         this.errorMessage = ''
-        await this.$axios.post('/promo/ebook', {
+        await this.$axios.post('/promo/beyourself', {
           name: this.name,
           email: this.email,
         })
 
         this.email = ''
         this.name = ''
-        this.successMessage = 'Parabéns seu E-Book foi enviado com sucesso'
+        this.successMessage =
+          'Parabéns, você irá receber o link de acesso para as aulas no email indicado!'
       } catch (err) {
         this.errorMessage = err.message || err.data.message
       }

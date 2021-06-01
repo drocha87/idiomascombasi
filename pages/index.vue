@@ -1,21 +1,21 @@
 <i18n lang="yaml">
 en:
   labelOne: Testemonials
-  labelTwo: Español con Basi
+  labelTwo: English with Basi
   labelThree: Learn with me
   labelFour: Professional translations
   labelFive: Groups
 
 pt-BR:
   labelOne: Depoimentos
-  labelTwo: Español con Basi
+  labelTwo: English with Basi
   labelThree: Estude comigo
   labelFour: Traduções profisionais
   labelFive: Grupos
 
 es:
   labelOne: Testimonios
-  labelTwo: Español con Basi
+  labelTwo: English with Basi
   labelThree: Estudia Conmigo
   labelFour: Traducciones profesionales
   labelFive: Grupos
@@ -48,7 +48,13 @@ es:
 
     <!-- Promotions -->
     <section>
-      <a
+      <nuxt-link class="md:hidden" to="beyourself" append>
+        <img
+          src="https://res.cloudinary.com/euyome/image/upload/v1622502694/idiomascombasi/English_with_Basi_gkbhet.jpg"
+          alt=""
+        />
+      </nuxt-link>
+      <!-- <a
         class="md:hidden"
         href="https://euyo.me/speakniceidiomas/608702ff2dd4910e727747bb"
         target="_blank"
@@ -57,9 +63,10 @@ es:
           src="https://res.cloudinary.com/euyome/image/upload/v1619895563/idiomascombasi/conversation-group-banner_ltmnl5.jpg"
           alt=""
         />
-      </a>
+      </a> -->
       <div class="hidden md:block">
-        <SpanishWithBasi />
+        <!-- <SpanishWithBasi /> -->
+        <EnglishWithBasi />
       </div>
     </section>
 
