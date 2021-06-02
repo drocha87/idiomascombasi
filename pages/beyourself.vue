@@ -15,7 +15,7 @@ pt-BR:
     que será um preview da minha próxima turma de <strong>Inglês com Confiança para iniciantes</strong>.
 
   contentTwo: >-
-    As aulas serão dias <strong>22 e 29 de junho as 19:30 horário de Brasilia</strong>.
+    As aulas serão nos dias <strong>22 e 29 de junho ás 19:30 horário de Brasília</strong>.
     Reserve sua vaga preenchendo o formulário abaixo. See you!
 
   button:
