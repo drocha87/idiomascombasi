@@ -51,7 +51,7 @@ es:
         <div class="w-64 mx-auto">
           <Button
             class="block mx-auto mt-12"
-            href="https://euyo.me/idiomascombasi/60927b525bb2cb0e4291c6a5"
+            href="https://euyo.me/idiomascombasi/60bf43095e9be00e4783a4ef"
             target="_blank"
           >
             {{ $t('button') }}
