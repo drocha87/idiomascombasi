@@ -105,6 +105,7 @@ export default Vue.extend({
         await this.$axios.post('/promo/ebook', {
           name: this.name,
           email: this.email,
+          captured_by: 'ebook form',
         })
 
         this.email = ''
